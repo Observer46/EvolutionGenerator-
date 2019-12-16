@@ -11,29 +11,29 @@ public class Genotype {
 
 
     public Genotype (){
-        for(int i=0; i<genoSize;i++){
+        for(int i=0;i<8;i++)    genes[i]=i;
+        for(int i=8; i<genoSize;i++){
             genes[i]= new Random().nextInt(8);
-
         }
-        fixGenes();
+        //this.fixGenes();
         Arrays.sort(genes);
     }
-    public Genotype(Genotype other1,Genotype other2){
-        int[] mixedGenes=other1.mixedGenes(other2);
-        fixGenes();
-        Arrays.sort(mixedGenes);
+    public Genotype(int[] mixedGenes){
         this.genes=mixedGenes;
+        this.fixGenes();
+        Arrays.sort(genes);
+        //this.genes=mixedGenes;
     }
 
     public int[] getGenes(){
         return this.genes;
     }
-//    public void setGenes(int[] genes){
-//        this.genes=genes;
-//    }
+    public void setGenes(int[] genes){ // Funkcja potrzebna do testów aby móc weryfikować wyniki
+        this.genes=genes;
+    }
 
 
-    private void fixGenes(){
+    public void fixGenes(){
         int [] geneCounter = new int[8];
 
         for(int gene : genes){
@@ -47,42 +47,49 @@ public class Genotype {
         }
     }
 
-    private void fixSingleGene(int[] geneCoutner, int gene){
-        int geneToReplace;
-        int previousGene;
-        do {
-            geneToReplace=new Random().nextInt(genoSize);
-            previousGene=genes[geneToReplace];  // Poprzedni gen
-        }while(geneCoutner[previousGene]<2);    // Wymieniamy, tylko jeśli nie spowoduje to dodatkowej kolizji - gdy występuje więcej niż 1 raz
+    public void fixSelectedSingleGene(int geneToReplace, int[] geneCoutner, int gene){
+        int previousGene=genes[geneToReplace];
         geneCoutner[previousGene]--;
         geneCoutner[gene]++;
         genes[geneToReplace]=gene;
     }
 
-    public int[] mixedGenes(Genotype other){
+    public void fixSingleGene(int[] geneCoutner, int gene){
+        int geneToReplace;
+        int previousGene;
+        do {
+            geneToReplace=new Random().nextInt(genoSize);
+            previousGene=genes[geneToReplace];  // Gen występujący w miejscu gdzie chcemy podmieniać
+        }while(geneCoutner[previousGene]<2);    // Wymieniamy, tylko jeśli nie spowoduje to dodatkowej kolizji - gdy występuje więcej niż 1 raz
+        fixSelectedSingleGene(geneToReplace,geneCoutner,gene);
+    }
+
+    public Genotype mixGenesOnGivenPivots(Genotype other, int geneSplitter1, int geneSplitter2){
+        if (geneSplitter1> geneSplitter2)       //Zamieniamy przy złej kolejności (nieczytelnie <3)
+            geneSplitter1=geneSplitter1^=geneSplitter2^(geneSplitter2=geneSplitter1);
+        boolean iAmDominating=new Random().nextBoolean();
+        int[] DNApart1;
+        int[] DNApart2;
+        int[] DNApart3;
+        int[] dominatingGenes=this.genes;
+        int[] recesiveGenes=other.genes;
+        if(!iAmDominating){
+            dominatingGenes=other.genes;
+            recesiveGenes=this.genes;
+        }
+        DNApart1=Arrays.copyOfRange(dominatingGenes,0,geneSplitter1);
+        DNApart2=Arrays.copyOfRange(recesiveGenes,geneSplitter1,geneSplitter2);
+        DNApart3=Arrays.copyOfRange(dominatingGenes,geneSplitter2,genoSize);
+        return new Genotype(combineGenes(DNApart1,DNApart2,DNApart3));
+    }
+
+    public Genotype mixGenotype(Genotype other){
         int geneSplitter1=new Random().nextInt(genoSize); // Dzielą geny na części, które będą wymieniane
         int geneSplitter2;
         do {
             geneSplitter2=new Random().nextInt(genoSize);
         }while (geneSplitter1==geneSplitter2);
-
-        if (geneSplitter1> geneSplitter2)       //Zamieniamy przy złej kolejności (nieczytelnie <3)
-            geneSplitter1=geneSplitter1^=geneSplitter2^(geneSplitter2=geneSplitter1);
-        boolean dominating=new Random().nextBoolean();
-        int[] DNApart1;
-        int[] DNApart2;
-        int[] DNApart3;
-        if(dominating){
-            DNApart1=Arrays.copyOfRange(this.genes,0,geneSplitter1);
-            DNApart2=Arrays.copyOfRange(other.genes,geneSplitter1,geneSplitter2);
-            DNApart3=Arrays.copyOfRange(this.genes,geneSplitter2,genoSize);
-        }
-        else{
-            DNApart1=Arrays.copyOfRange(other.genes,0,geneSplitter1);
-            DNApart2=Arrays.copyOfRange(this.genes,geneSplitter1,geneSplitter2);
-            DNApart3=Arrays.copyOfRange(other.genes,geneSplitter2,genoSize);
-        }
-        return combineGenes(DNApart1,DNApart2,DNApart3);
+        return this.mixGenesOnGivenPivots(other, geneSplitter1, geneSplitter2);
     }
 
     private static int[] combineGenes(int[] DNApart1, int[] DNApart2, int[] DNApart3){
@@ -98,9 +105,9 @@ public class Genotype {
 
     }
 
-    public int getMove(){
+    public MoveDirection getMove(){
         int direction=new Random().nextInt(genoSize);
-        return genes[direction];
+        return MoveDirection.geneToMove(genes[direction]);
     }
 
 }

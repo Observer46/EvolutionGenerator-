@@ -18,8 +18,8 @@ public class GenotypeTest {             // Trochę trudno testować losowe funkc
         Assertions.assertTrue(areSorted);
 
         areSorted=true;
-        Genotype mixTest = new Genotype(genotype1,genotype2);
-        genes=mixTest.getGenes();
+        //Genotype mixTest = new Genotype(genotype1,genotype2);
+       // genes=mixTest.getGenes();
         for(int i=1;i<32;i++)
             if(genes[i-1]>genes[i])
                 areSorted=false;

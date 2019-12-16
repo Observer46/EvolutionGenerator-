@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3927fb8f-5c01-4459-9531-f0401f224f8a" name="Default Changelist" comment="" />
+    <list default="true" id="3927fb8f-5c01-4459-9531-f0401f224f8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_json_json_20190722.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MoveDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/OptionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/properties.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/EvolvingAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/EvolvingAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Genotype.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Genotype.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/ModuloMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/ModuloMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Plant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab4/GenotypeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab4/GenotypeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/lab3/Vector2d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Genotype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Genotype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/GenotypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/GenotypeTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +29,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="package.json" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SFOqB6RcQLxC2DsQQqa2W4RKx0" />
   <component name="PropertiesComponent">
@@ -29,6 +51,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -218,10 +241,22 @@
       <workItem from="1573491686760" duration="3579000" />
       <workItem from="1574692965486" duration="2533000" />
       <workItem from="1575999022459" duration="3077000" />
+      <workItem from="1576500269948" duration="6878000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

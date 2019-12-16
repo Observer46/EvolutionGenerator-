@@ -55,6 +55,39 @@ public class Vector2d {
         return new Vector2d((-1)*this.x,(-1)*this.y);
     }
 
+    public static Vector2d toUnitVec (int direction){
+        Vector2d unitVector;
+        switch (direction){
+            case 0:
+                unitVector=new Vector2d(0,1);
+                break;
+            case 1:
+                unitVector=new Vector2d(1,1);
+                break;
+            case 2:
+                unitVector=new Vector2d(1,0);
+                break;
+            case 3:
+                unitVector=new Vector2d(1,-1);
+                break;
+            case 4:
+                unitVector=new Vector2d(0,-1);
+                break;
+            case 5:
+                unitVector=new Vector2d(-1,-1);
+                break;
+            case 6:
+                unitVector=new Vector2d(-1,0);
+                break;
+            case 7:
+                unitVector=new Vector2d(-1,1);
+                break;
+            default:
+                unitVector=new Vector2d(0,0);
+        }
+        return unitVector;
+    }
+
     @Override
     public int hashCode(){
         int hash=13;

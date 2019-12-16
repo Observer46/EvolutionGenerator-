@@ -12,8 +12,8 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
     private Genotype genotype;
     private ModuloMap map;
     private List<IPositionChangeObserver> observers = new ArrayList<>();
-    private int energy=5;
-    private short orientation=0;
+    private int energy=20;
+    private int orientation=0;
 
     public EvolvingAnimal (ModuloMap map, Vector2d position){
         this.map=map;
@@ -22,6 +22,12 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
 
     public void move(){
         int direction=this.genotype.getMove();
+        int newDirection = (this.orientation + direction)%8;
+        Vector2d newPosition = super.position.add(Vector2d.toUnitVec(newDirection));
+        this.map.verifyMove(newPosition);
+        super.position=newPosition;
+        //this.updateObservers();
+
 
     }
 

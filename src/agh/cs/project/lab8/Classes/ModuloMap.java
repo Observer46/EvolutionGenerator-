@@ -1,6 +1,7 @@
 package agh.cs.project.lab8.Classes;
 
 
+import agh.cs.lab3.Animal;
 import agh.cs.lab3.Vector2d;
 import agh.cs.lab5.IMapElement;
 
@@ -34,14 +35,21 @@ public class ModuloMap{
 
 
 
-    public void place(EvolvingAnimal animal) {
-        animals.add(animal);
-            //animal.addObserver(this);
-            //animal.addObserver(this.boundary);
-            //this.boundary.addPosition(animal.getPosition());
-            //elements.put(animal.getPosition(),animal);
+    public void place(IMapElement element) {
+        this.elements.add(element);
+        if (element instanceof EvolvingAnimal) {
+            EvolvingAnimal animal = (EvolvingAnimal) element;
+            animals.add(animal);
+        }
+    }
 
-}
+    public void remove(IMapElement element) {
+        this.elements.remove(element);
+        if (element instanceof EvolvingAnimal){
+            EvolvingAnimal animal = (EvolvingAnimal) element;
+            animals.remove(animal);
+        }
+    }
 
     public Object objectAt(Vector2d position) {
         for (EvolvingAnimal anim : animals) {

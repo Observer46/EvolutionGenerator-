@@ -99,6 +99,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="org.json:json:20190722" level="project" />
+    <orderEntry type="library" name="org.json:json:20190722" level="project" />
+    <orderEntry type="library" exported="" name="org.apache.clerezza.ext:org.json.simple:0.4" level="project" />
+    <orderEntry type="library" name="org.infinispan:infinispan-multimap:9.4.17.Final" level="project" />
+    <orderEntry type="library" exported="" name="com.google.guava:guava:14.0.1" level="project" />
   </component>
 </module>

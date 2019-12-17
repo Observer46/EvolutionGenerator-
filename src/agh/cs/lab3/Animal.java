@@ -3,9 +3,9 @@ package agh.cs.lab3;
 import agh.cs.lab4.IWorldMap;
 import agh.cs.lab5.AbstractWorldMapElement;
 import agh.cs.lab7.IPositionChangeObserver;
+import agh.cs.project.lab8.Classes.Vector2d;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 

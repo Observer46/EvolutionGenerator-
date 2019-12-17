@@ -1,9 +1,9 @@
 package agh.cs.project.lab8.Classes;
 
 
-import agh.cs.lab3.Animal;
-import agh.cs.lab3.Vector2d;
-import agh.cs.lab5.IMapElement;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.ListMultimap;
+//import org.infinispan.multimap.api.embedded.*;
 
 
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ public class ModuloMap{
     private Vector2d lowerLeft;
     private Vector2d upperRight;
     private List<EvolvingAnimal> animals = new ArrayList<>();
-    private List<IMapElement>  elements = new ArrayList<>();
+    private ListMultimap<Vector2d,IMapElement> elements = ArrayListMultimap.create();
 
     public ModuloMap(Vector2d lowerLeft, Vector2d upperRight){
         this.lowerLeft=lowerLeft;
@@ -36,7 +36,7 @@ public class ModuloMap{
 
 
     public void place(IMapElement element) {
-        this.elements.add(element);
+        this.elements.put(element.getPosition(),element);
         if (element instanceof EvolvingAnimal) {
             EvolvingAnimal animal = (EvolvingAnimal) element;
             animals.add(animal);
@@ -44,14 +44,14 @@ public class ModuloMap{
     }
 
     public void remove(IMapElement element) {
-        this.elements.remove(element);
+        this.elements.remove(element.getPosition(),element);
         if (element instanceof EvolvingAnimal){
             EvolvingAnimal animal = (EvolvingAnimal) element;
             animals.remove(animal);
         }
     }
 
-    public Object objectAt(Vector2d position) {
+    public Object objectsAt(Vector2d position) {
         for (EvolvingAnimal anim : animals) {
             if (anim.getPosition().equals(position))
                 return anim;
@@ -60,12 +60,19 @@ public class ModuloMap{
     }
 
     public boolean isOccupied(Vector2d position){
-        return objectAt(position)!=null;
+        return objectsAt(position)!=null;
     }
 
     public void moveAnimals() {
 
     }
+
+//    @Override
+//    public void positionChanged(Vector2d oldPosition, Vector2d newPosition) {
+//        IMapElement zyzio = elements.get(oldPosition);
+//        elements.remove(oldPosition);
+//        elements.put(newPosition, zyzio);
+//    }
 
 
     public String toString(){

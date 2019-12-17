@@ -1,7 +1,7 @@
 import agh.cs.lab3.*;
 import agh.cs.lab4.IWorldMap;
 import agh.cs.lab4.RectangularMap;
-import org.junit.jupiter.api.Assertions;
+import agh.cs.project.lab8.Classes.Vector2d;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

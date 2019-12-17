@@ -1,6 +1,6 @@
 package agh.cs.lab3;
 
-import com.sun.javafx.scene.traversal.Direction;
+import agh.cs.project.lab8.Classes.Vector2d;
 
 public enum MapDirection {
     NORTH,
@@ -52,7 +52,7 @@ public enum MapDirection {
         }
     }
 
-    public  Vector2d toUnitVector(){
+    public Vector2d toUnitVector(){
         switch(this) {
             case NORTH:
                 return new Vector2d(0,1);

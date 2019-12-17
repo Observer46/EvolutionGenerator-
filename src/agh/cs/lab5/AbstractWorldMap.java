@@ -2,10 +2,11 @@ package agh.cs.lab5;
 
 import agh.cs.lab3.Animal;
 import agh.cs.lab3.MoveDirection;
-import agh.cs.lab3.Vector2d;
+import agh.cs.project.lab8.Classes.Vector2d;
 import agh.cs.lab4.IWorldMap;
 import agh.cs.lab7.IPositionChangeObserver;
 import agh.cs.lab7.MapBoundary;
+import agh.cs.project.lab8.Classes.IMapElement;
 
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.Map;
 
 public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObserver {
     protected List<Animal> animals = new ArrayList<>();
-    protected Map<Vector2d,IMapElement> elements = new HashMap<>();
+    protected Map<Vector2d, IMapElement> elements = new HashMap<>();
     protected MapBoundary boundary = new MapBoundary();
 
     public List<Animal> getAnimals() {

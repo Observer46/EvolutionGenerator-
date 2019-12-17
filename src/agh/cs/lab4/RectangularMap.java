@@ -1,5 +1,5 @@
 package agh.cs.lab4;
-import agh.cs.lab3.Vector2d;
+import agh.cs.project.lab8.Classes.Vector2d;
 import agh.cs.lab5.AbstractWorldMap;
 public class RectangularMap extends AbstractWorldMap {
     private Vector2d upperRight;

@@ -1,8 +1,8 @@
 package agh.cs.project.lab8.Classes;
 
 public class Vector2d {
-    private final int x;
-    private final int y;
+    public final int x;
+    public final int y;
 
     public Vector2d(int x, int y){
         this.x=x;
@@ -62,4 +62,6 @@ public class Vector2d {
         hash+=this.y*17;
         return hash;
     }
+
+
 }

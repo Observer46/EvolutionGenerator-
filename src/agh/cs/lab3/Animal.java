@@ -76,6 +76,11 @@ public class Animal extends AbstractWorldMapElement {
         }
     }
 
+    @Override
+    public boolean isPlant() {
+        return false;
+    }
+
     public void addObserver(IPositionChangeObserver observer){
         this.observers.add(observer);
     }

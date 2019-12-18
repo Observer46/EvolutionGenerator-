@@ -7,4 +7,13 @@ public class Plant extends AbstractWorldMapElement {
     public Plant (Vector2d position){
         super.position=position;
     }
+
+    @Override
+    public boolean isPlant() {
+        return true;
+    }
+
+    public void gotEaten(){
+        super.map.remove(this);
+    }
 }

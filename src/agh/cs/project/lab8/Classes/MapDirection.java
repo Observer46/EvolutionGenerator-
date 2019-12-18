@@ -33,7 +33,30 @@ public enum MapDirection {
         }
     }
 
-    public MapDirection rotateOrientation(MoveDirection moveDir) {
+    public MapDirection next(){
+        switch (this){
+            case N:
+                return NE;
+            case NE:
+                return E;
+            case E:
+                return SE;
+            case SE:
+                return S;
+            case S:
+                return SW;
+            case SW:
+                return W;
+            case W:
+                return NW;
+            case NW:
+                return N;
+            default:
+                throw new IndexOutOfBoundsException("Nieznany kierunek - nie wiem jaki ma być kolejny");
+        }
+    }
+
+    public MapDirection getMoveOrientation(MoveDirection moveDir) {
         int direction = (this.ordinal() + moveDir.ordinal()) % 7;
         return MapDirection.convertToMapDir(direction);
     }

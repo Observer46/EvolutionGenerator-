@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Genotype {
-    public static int genoSize=32;
+    private static int genoSize=32;
     private int[] genes=new int[genoSize];
 
 
@@ -111,4 +111,11 @@ public class Genotype {
         return MoveDirection.geneToMove(genes[direction]);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder string = new StringBuilder();
+        for(int i=0;i<Genotype.genoSize;i++)
+            string.append(Integer.toString(this.genes[i]));
+        return string.toString();
+    }
 }

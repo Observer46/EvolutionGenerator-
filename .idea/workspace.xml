@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3927fb8f-5c01-4459-9531-f0401f224f8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/lab3/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/AbstractWorldMapElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/AbstractWorldMapElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Genotype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Genotype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/IMapElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/IMapElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/IPositionChangeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/IPositionChangeObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapStatistics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/ModuloMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/ModuloMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/OptionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/OptionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Vector2d.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

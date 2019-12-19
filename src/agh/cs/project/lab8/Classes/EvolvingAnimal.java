@@ -1,6 +1,7 @@
 package agh.cs.project.lab8.Classes;
 
 import agh.cs.lab3.Animal;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,8 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
     private static int minEnergyToReproduce = OptionParser.startEnergy/2;
     private static int maxEnergyLimit=OptionParser.startEnergy;
     private List<IPositionChangeObserver> observers = new ArrayList<>();
+
+
 
     public EvolvingAnimal (ModuloMap map, Vector2d position){
         this.map=map;

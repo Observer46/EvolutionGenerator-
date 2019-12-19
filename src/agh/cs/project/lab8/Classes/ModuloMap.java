@@ -9,6 +9,7 @@ import com.google.common.collect.ListMultimap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Vector;
 
 public class ModuloMap implements IPositionChangeObserver{
     private final Vector2d lowerLeft = new Vector2d(0,0);
@@ -160,10 +161,69 @@ public class ModuloMap implements IPositionChangeObserver{
 
     }
 
-    public void plantsGrowthPhase(){ //TODO
+    public void plantsGrowthPhase() { //TODO
+        Vector2d plantInJunglePos = this.getUnoccupiedRandomPosInJungle();
+        if (plantInJunglePos!=null){
+        Plant plantInJungle = new Plant(plantInJunglePos);
+        this.place(plantInJungle);
+        }
+
+        Vector2d plantOnSavannahPos = this.getUnoccupiedRandomPosOnSavannah();
+        if(plantOnSavannahPos!=null) {
+            Plant plantOnSavannah = new Plant(plantInJunglePos);
+            this.place(plantOnSavannah);
+        }
 
     }
 
+    public boolean isInJungle(Vector2d position){
+        return position.precedes(this.jungleUpperRight) && position.follows(this.jungleLowerLeft);
+    }
+
+    public Vector2d getRandomPositionInRange(Vector2d lowerLeft, Vector2d upperRight){
+        int xRange=upperRight.x-lowerLeft.x;
+        int yRange=upperRight.y-lowerLeft.y;
+        int RandomPositionX=this.random.nextInt(xRange)+lowerLeft.x;
+        int RandomPositionY=this.random.nextInt(yRange)+lowerLeft.y;
+        return new Vector2d(RandomPositionX, RandomPositionY);
+    }
+
+    public Vector2d getRandomPositionInRangeNoCollision(Vector2d lowerLeft, Vector2d upperRight){
+        int xRange=upperRight.x-lowerLeft.x;
+        int yRange=upperRight.y-lowerLeft.y;
+        int attemptCount = xRange*yRange;
+        if(attemptCount > 100)  attemptCount=100;   // Ustalamy limit losowania aby przypadkiem nie zawiesił się program
+        Vector2d randomPosition;
+        do {
+            randomPosition=this.getRandomPositionInRange(lowerLeft,upperRight);
+            attemptCount--;
+        }while (this.isOccupied(randomPosition) && attemptCount>0);
+        return randomPosition;
+    }
+
+    public Vector2d getUnoccupiedRandomPosInJungle(){     // Zwraca null jeśli nie znalazło wolnej pozycji
+        Vector2d randPosInJungle=this.getRandomPositionInRangeNoCollision(this.jungleLowerLeft,this.jungleUpperRight);
+        return !this.isOccupied(randPosInJungle) ? randPosInJungle : null;
+    }
+
+    public Vector2d getUnoccupiedRandomPosOnSavannah(){   // Zwaraca null jeśli nie znalazło wolnej pozycji
+        Vector2d randPosOnSavannah;
+        int attemptCount=this.upperRight.x*this.upperRight.y;
+        if(attemptCount>200)   attemptCount=200;  // Ustalamy górny limit losowań
+        do{
+            randPosOnSavannah=getRandomPositionInRangeNoCollision(this.lowerLeft,this.upperRight);
+            attemptCount--;
+        }while ((this.isOccupied(randPosOnSavannah) || this.isInJungle(randPosOnSavannah)) && attemptCount>0);  // Losujemy tak długo, jak pozycja może być zajęta (potencjalnie) lub jest w dżungli
+        return !this.isOccupied(randPosOnSavannah) && !this.isInJungle(randPosOnSavannah) ? randPosOnSavannah : null;
+    }
+
+
+    public void placeFirstAnimals(){    // Jakie są wymagania co do początku???
+        for(int i=0;i<OptionParser.startAnimalNumber;i++) {
+            Vector2d animalPosition=this.getRandomPositionInRangeNoCollision(this.lowerLeft,this.upperRight);
+            EvolvingAnimal animal = new EvolvingAnimal(this,animalPosition);
+        }
+    }
 
     public void positionChanged(Vector2d oldPosition, Vector2d newPosition, EvolvingAnimal animal) {
         this.elements.remove(oldPosition,animal);

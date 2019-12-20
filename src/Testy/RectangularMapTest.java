@@ -1,7 +1,7 @@
 import agh.cs.lab3.Animal;
 import agh.cs.lab3.MoveDirection;
 import agh.cs.lab3.OptionsParser;
-import agh.cs.lab3.Vector2d;
+import agh.cs.project.lab8.Classes.Vector2d;
 import agh.cs.lab4.IWorldMap;
 import agh.cs.lab4.RectangularMap;
 import org.junit.jupiter.api.Test;

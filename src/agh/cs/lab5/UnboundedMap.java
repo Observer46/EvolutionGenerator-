@@ -1,11 +1,9 @@
 package agh.cs.lab5;
 
-import agh.cs.lab3.Animal;
-import agh.cs.lab3.Vector2d;
+import agh.cs.project.lab8.Classes.Vector2d;
 import agh.cs.lab4.MapVisualizer;
-import agh.cs.lab7.MapBoundary;
+import agh.cs.project.lab8.Classes.IMapElement;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class UnboundedMap extends AbstractWorldMap {

@@ -1,14 +1,19 @@
 package agh.cs.project.lab8.Classes;
 
-import agh.cs.lab3.Vector2d;
-import agh.cs.lab5.AbstractWorldMapElement;
+import static agh.cs.project.lab8.Classes.OptionParser.plantEnergy;
 
 public class Plant extends AbstractWorldMapElement {
-    static int energyBoost=10;
-
+    public static int energyBoost=plantEnergy;
     public Plant (Vector2d position){
         super.position=position;
     }
 
+    @Override
+    public boolean isPlant() {
+        return true;
+    }
 
+    public void gotEaten(){
+        super.map.remove(this);
+    }
 }

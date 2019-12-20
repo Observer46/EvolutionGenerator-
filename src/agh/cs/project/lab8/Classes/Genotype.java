@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Genotype {
-    static int genoSize=32;
+    private static int genoSize=32;
     private int[] genes=new int[genoSize];
 
 
@@ -21,7 +21,7 @@ public class Genotype {
     public Genotype(int[] mixedGenes){
         this.genes=mixedGenes;
         this.fixGenes();
-        Arrays.sort(genes);
+
         //this.genes=mixedGenes;
     }
 
@@ -45,23 +45,24 @@ public class Genotype {
             if (geneCount==0)
                 fixSingleGene(geneCounter,i);
         }
+        Arrays.sort(genes);
     }
 
-    public void fixSelectedSingleGene(int geneToReplace, int[] geneCoutner, int gene){
-        int previousGene=genes[geneToReplace];
+    public void fixSelectedSingleGene(int indexToReplace, int[] geneCoutner, int gene){
+        int previousGene=genes[indexToReplace];
         geneCoutner[previousGene]--;
         geneCoutner[gene]++;
-        genes[geneToReplace]=gene;
+        genes[indexToReplace]=gene;
     }
 
     public void fixSingleGene(int[] geneCoutner, int gene){
-        int geneToReplace;
+        int indexToReplace;
         int previousGene;
         do {
-            geneToReplace=new Random().nextInt(genoSize);
-            previousGene=genes[geneToReplace];  // Gen występujący w miejscu gdzie chcemy podmieniać
+            indexToReplace=new Random().nextInt(genoSize);
+            previousGene=genes[indexToReplace];  // Gen występujący w miejscu gdzie chcemy podmieniać
         }while(geneCoutner[previousGene]<2);    // Wymieniamy, tylko jeśli nie spowoduje to dodatkowej kolizji - gdy występuje więcej niż 1 raz
-        fixSelectedSingleGene(geneToReplace,geneCoutner,gene);
+        fixSelectedSingleGene(indexToReplace,geneCoutner,gene);
     }
 
     public Genotype mixGenesOnGivenPivots(Genotype other, int geneSplitter1, int geneSplitter2){
@@ -110,4 +111,11 @@ public class Genotype {
         return MoveDirection.geneToMove(genes[direction]);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder string = new StringBuilder();
+        for(int i=0;i<Genotype.genoSize;i++)
+            string.append(Integer.toString(this.genes[i]));
+        return string.toString();
+    }
 }

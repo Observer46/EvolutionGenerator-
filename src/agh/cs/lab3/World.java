@@ -1,6 +1,7 @@
 package agh.cs.lab3;
 import agh.cs.lab4.*;
 import agh.cs.lab5.*;
+import agh.cs.project.lab8.Classes.Vector2d;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,9 @@
 package agh.cs.lab5;
 
-import agh.cs.lab3.Vector2d;
+import agh.cs.project.lab8.Classes.Vector2d;
+import agh.cs.project.lab8.Classes.IMapElement;
 
-public abstract class AbstractWorldMapElement implements IMapElement{
+public abstract class AbstractWorldMapElement implements IMapElement {
     protected Vector2d position;
 
     @Override

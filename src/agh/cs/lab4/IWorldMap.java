@@ -1,5 +1,6 @@
 package agh.cs.lab4;
 import agh.cs.lab3.*;
+import agh.cs.project.lab8.Classes.Vector2d;
 
 /**
  * The interface responsible for interacting with the map of the world.

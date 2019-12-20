@@ -1,12 +1,10 @@
 package agh.cs.lab7;
 
-import agh.cs.lab3.Vector2d;
-import agh.cs.lab5.IMapElement;
+import agh.cs.project.lab8.Classes.Vector2d;
 
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import java.util.concurrent.ConcurrentSkipListSet;
 
 public class MapBoundary implements IPositionChangeObserver {
 //    Comparator<IMapElement> xComparator = Comparator.comparing(IMapElement::getVector2dCordX);

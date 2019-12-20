@@ -5,11 +5,7 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ListMultimap;
 
 
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Vector;
+import java.util.*;
 
 public class ModuloMap implements IPositionChangeObserver{
     private final Vector2d lowerLeft = new Vector2d(0,0);
@@ -130,7 +126,7 @@ public class ModuloMap implements IPositionChangeObserver{
         for(Plant plant : plants){
             List<IMapElement> elementsOnPlantPosition = objectsAt(plant.getPosition());
             if(elementsOnPlantPosition.size()>1){ // Jeśli jest więcej niż jeden element na pozycji rośliny to jest tam zwierzę
-                List<EvolvingAnimal> maxEnergyAnimals = getMaxEnergyAnimalsAtPositiong(plant.getPosition());
+                List<EvolvingAnimal> maxEnergyAnimals = getMaxEnergyAnimalsAtPosition(plant.getPosition());
                 int splitEnergyBoost = Plant.energyBoost/maxEnergyAnimals.size();
                 feedMaxEnergyAnimals(maxEnergyAnimals,splitEnergyBoost);
                 plant.gotEaten();
@@ -138,7 +134,7 @@ public class ModuloMap implements IPositionChangeObserver{
         }
     }
 
-    public List<EvolvingAnimal> getMaxEnergyAnimalsAtPositiong(Vector2d position){
+    public List<EvolvingAnimal> getMaxEnergyAnimalsAtPosition(Vector2d position){ // Teraz powinno działać
         List<EvolvingAnimal> maxEnergyAnimals = new ArrayList<>();
         List<IMapElement> objectsAtPosition = this.objectsAt(position);
         int maxEnergyFound = 0;
@@ -147,7 +143,10 @@ public class ModuloMap implements IPositionChangeObserver{
                 EvolvingAnimal animal = (EvolvingAnimal) elem;
                 if(animal.getEnergy() > maxEnergyFound)
                     maxEnergyAnimals.clear();
-                if(animal.getEnergy() >= maxEnergyFound)    maxEnergyAnimals.add(animal);
+                if(animal.getEnergy() >= maxEnergyFound){
+                    maxEnergyAnimals.add(animal);
+                    maxEnergyFound=animal.getEnergy();
+                }
             }
         return maxEnergyAnimals;
     }
@@ -157,11 +156,78 @@ public class ModuloMap implements IPositionChangeObserver{
             animal.gainEnergy(splitEnergyBoost);
     }
 
-    public void animalReporductionPhase(){// TODO
-
+    public List<EvolvingAnimal> findSecondMaxEnergyAnimals(List<IMapElement> elementsOnPosition, int maxEnergy){
+        List<EvolvingAnimal> secondMaxEnergyAnimals = new ArrayList<>();
+        int secondMaxEnergy=0;
+        for(IMapElement elem : elementsOnPosition)
+            if(!elem.isPlant()){
+                EvolvingAnimal animal = (EvolvingAnimal) elem;
+                if(animal.getEnergy() > secondMaxEnergy)
+                    secondMaxEnergyAnimals.clear();
+                if(animal.getEnergy() >= secondMaxEnergy){
+                    secondMaxEnergyAnimals.add(animal);
+                    secondMaxEnergy=animal.getEnergy();
+                }
+            }
+        return secondMaxEnergyAnimals;
     }
 
-    public void plantsGrowthPhase() { //TODO
+    public List<EvolvingAnimal> findAnimalsToReproduce(List<IMapElement> elementsOnPosition){   // Raczej git
+        Vector2d thisPosition = elementsOnPosition.get(0).getPosition();       // Aktualna pozycja
+        List<EvolvingAnimal> animalsWithMaxEnergy = this.getMaxEnergyAnimalsAtPosition(thisPosition);
+        if (animalsWithMaxEnergy.size() >=2){
+            if (animalsWithMaxEnergy.get(0).canReproduce()) return animalsWithMaxEnergy;       // Jeśli zwierząta z maksymalną energią (co najmniej dwa) mogą się rozmnażać to z nich będziemy losować parę do rozmnażania
+            else    return null;    // Jeśli maksymalne mają za małą energię to nie znajdziemy pary do rozmnażania
+        }
+        else if (animalsWithMaxEnergy.size()==0)    return null;    // Brak zwierząt na pozycji
+        //Przypadek dla jednego z najwyższą enegrią na polu
+        if(!animalsWithMaxEnergy.get(0).canReproduce()) return null;
+        EvolvingAnimal maxEnergyParent = animalsWithMaxEnergy.get(0);
+        int maxEnergy = maxEnergyParent.getEnergy();
+        List<EvolvingAnimal> animalsToReproduction = findSecondMaxEnergyAnimals(elementsOnPosition,maxEnergy);
+        if (animalsToReproduction.size()>=1)
+            if(!animalsToReproduction.get(0).canReproduce())        // Sprawdzamy, czy drugi rodzic(drudzy rodzice) mogą też się rozmnażać
+                return null;
+
+        animalsWithMaxEnergy.addAll(animalsToReproduction);         // W ten sposób zwierzę o najwyższej energii zawsze jest na początku
+        return animalsWithMaxEnergy.size()==1 ? null : animalsWithMaxEnergy;
+    }
+
+    public void tryToReproduce (List<EvolvingAnimal> animalsToReproduce){
+        if(animalsToReproduce==null)   return;
+        EvolvingAnimal parent1=animalsToReproduce.get(0);
+        EvolvingAnimal parent2=animalsToReproduce.get(1);
+        EvolvingAnimal child;
+        int firstParentIndex=0;
+        int secondParentIndex=1;
+        if(parent1.getEnergy()!=parent2.getEnergy()){       // Dwójka najmocniejszych się rozmnaża, jest kilka "drugich najmocniejszych", więc losoujemy go
+            if (animalsToReproduce.size()>=2)
+                secondParentIndex = random.nextInt(animalsToReproduce.size() -1) + 1;   // Nie wylosujemy nigdy parent1 dzięki przesunięciu zakresu
+        }
+        else{       // Losujemy dwóch najmocniejszych
+            if (animalsToReproduce.size()>=2) {
+                firstParentIndex = random.nextInt(animalsToReproduce.size());
+                secondParentIndex = random.nextInt(animalsToReproduce.size() - firstParentIndex) + firstParentIndex;   // Nie wylosujemy nigdy parent1 dzięki przesunięciu zakresu
+            }
+        }
+        parent1 = animalsToReproduce.get(firstParentIndex);
+        parent2 = animalsToReproduce.get(secondParentIndex);
+        child = parent1.reproduceWith(parent2);
+        this.place(child);
+    }
+
+
+
+    public void animalReporductionPhase(){
+        Map mapOfElems = this.elements.asMap();
+        for(Object elemCollection : mapOfElems.values()){
+            List <IMapElement>  elementsOnPositions = (ArrayList<IMapElement>) elemCollection;      // Lista elementów na pozycji gdzie cokolwiek aktualnie się znaduje
+            List <EvolvingAnimal> animalsToReproduction = findAnimalsToReproduce(elementsOnPositions);
+            this.tryToReproduce(animalsToReproduction);
+        }
+    }
+
+    public void plantsGrowthPhase() {
         Vector2d plantInJunglePos = this.getUnoccupiedRandomPosInJungle();
         if (plantInJunglePos!=null){
         Plant plantInJungle = new Plant(plantInJunglePos);

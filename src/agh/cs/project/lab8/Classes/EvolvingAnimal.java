@@ -70,8 +70,8 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
         this.energy-=lostEnergy;
     }
 
-    public boolean canReproduceWith(EvolvingAnimal other){
-        return (this.energy >=EvolvingAnimal.minEnergyToReproduce) && (other.getEnergy()>=EvolvingAnimal.minEnergyToReproduce);
+    public boolean canReproduce(){
+        return (this.energy >=EvolvingAnimal.minEnergyToReproduce);
     }
 
     public EvolvingAnimal reproduceWith(EvolvingAnimal other){

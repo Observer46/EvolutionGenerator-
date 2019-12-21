@@ -1,6 +1,7 @@
 package agh.cs.project.lab8.Classes;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,11 +9,12 @@ import java.util.Map;
 public class MapStatistics {
     private ModuloMap map;
     private Map<Genotype,Integer> dominatingGenotypes = new HashMap<>();
-    private String mostPopularGenotype="";
+    private Genotype mostPopularGenotype;
+    private String mostPopularGenotypeString ="";
     private int mostPopularGenotypeCount=0;
     private int era=0;
     private DecimalFormat numberFormat = new DecimalFormat("0.00");
-    private EvolvingAnimal observedAnimal=null;
+    private List <EvolvingAnimal> animalsWithDominatingGenotype=new ArrayList<>();
 
     public MapStatistics(ModuloMap map){
         this.map = map;
@@ -39,15 +41,8 @@ public class MapStatistics {
         }
     }
 
-    public void setObservedAnimal(EvolvingAnimal animal){
-        this.observedAnimal.startObserving();
-        this.observedAnimal=animal;
-    }
-
-    public void stopObservingAnimal(){
-        this.observedAnimal.stopObserving();
-        this.observedAnimal=null;
-
+    public List<EvolvingAnimal> getAnimalsWithDominatingGenotype() {
+        return animalsWithDominatingGenotype;
     }
 
     public void addAnimalToStats(EvolvingAnimal animal){
@@ -62,9 +57,23 @@ public class MapStatistics {
             genotypeCount++;
         }
         if(genotypeCount>this.mostPopularGenotypeCount){
+            this.mostPopularGenotype=animalsGenotype;
             this.mostPopularGenotypeCount = genotypeCount;
-            this.mostPopularGenotype = animalsGenotype.toString();
+            this.mostPopularGenotypeString = animalsGenotype.toString();
+            this.animalsWithDominatingGenotype.clear();
+            this.addAnimalsWithDominatingGenotypes();
         }
+        else if(animal.getGenotype().equals(this.mostPopularGenotype))
+            this.animalsWithDominatingGenotype.add(animal);
+
+    }
+
+    public void addAnimalsWithDominatingGenotypes(){
+        List <EvolvingAnimal> allAnimals = this.map.getAnimals();
+        for(EvolvingAnimal animal : allAnimals)
+            if(animal.getGenotype().equals(this.mostPopularGenotype))
+                this.animalsWithDominatingGenotype.add(animal);
+
     }
 
     public double avgDeadAnimalsErasLived (){
@@ -109,8 +118,8 @@ public class MapStatistics {
 //        Integer genotypeCount = this.dominatingGenotypes.get(animalsGenotype);
 //        genotypeCount--;
 //    }
-    public String getMostPopularGenotype(){
-        return this.mostPopularGenotype;
+    public String getMostPopularGenotypeString(){
+        return this.mostPopularGenotypeString;
     }
 
     public String toString(){
@@ -118,7 +127,7 @@ public class MapStatistics {
         String description = "Stats after era " + this.era + ":\n";
         description+="Number of alive animals: " + this.getAnimalCount() + "\n";
         description+="Number of plants on map: " + this.getPlantNumber() + "\n";
-        description+="Dominating genotype: " + this.getMostPopularGenotype() + "\n";
+        description+="Dominating genotype: " + this.getMostPopularGenotypeString() + "\n";
         description+="Averge energy of alive animals: " + numberFormat.format(this.avgEnergy()) + "\n";
         description+="Averge number of lived eras of dead animals: " + numberFormat.format(this.avgDeadAnimalsErasLived()) + "\n";
         description+="Averge children number for alive animals: " + numberFormat.format(this.avgChildren()) + "\n";

@@ -22,6 +22,7 @@ public class ModuloMap implements IPositionChangeObserver{
     private MapStatistics mapStats;
     private EvolvingAnimal observedAnimal=null;
 
+
     public ModuloMap(Vector2d upperRight){
         this.upperRight=upperRight;
         ModuloMap.jungleRatioHeight = OptionParser.jungleRatioHeight;
@@ -53,14 +54,13 @@ public class ModuloMap implements IPositionChangeObserver{
         return this.plants;
     }
 
+    public MapStatistics getMapStats(){
+        return this.mapStats;
+    }
+
     public void setObservedAnimal(Vector2d animalPosition){
         List <EvolvingAnimal> maxEnergyAnimalsOnPos = this.getMaxEnergyAnimalsAtPosition(animalPosition);
         this.observedAnimal = maxEnergyAnimalsOnPos.get(0);
-        this.observedAnimal.startObserving();
-    }
-
-    public void stopObservingAnimal(){
-        this.observedAnimal=null;
         this.observedAnimal.startObserving();
     }
 
@@ -380,12 +380,13 @@ public class ModuloMap implements IPositionChangeObserver{
 
     public String toString() {
         MapVisualizer visualizer = new MapVisualizer(this);
-        return this.mapStats.toString() + "\n"+visualizer.draw(lowerLeft,upperRight);
-    }
-    public String toStringExtra() {
-        MapVisualizer visualizer = new MapVisualizer(this);
         String s="";
-        if(this.observedAnimal!=null)   s=this.observedAnimal.getAnimalStats().printObservedStats();
-        return s+this.toString();
+        s+= this.mapStats.toString() + "\n"+visualizer.draw(lowerLeft,upperRight);
+        return s;
+    }
+
+    public String getObservedAnimalStats(){
+        if(this.observedAnimal!=null)   return this.observedAnimal.getAnimalStats().printObservedStats();
+        return "";
     }
 }

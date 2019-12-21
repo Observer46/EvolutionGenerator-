@@ -2,71 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3927fb8f-5c01-4459-9531-f0401f224f8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapVisualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/SafariVisualization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/AnimalAndMapIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/EvolvingAnimalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/Animal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/MapDirection$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/MapDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/MoveDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/OptionsParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/Vector2d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab3/World.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab4/IWorldMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab4/MapVisualizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab4/RectangularMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab5/AbstractWorldMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab5/AbstractWorldMapElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab5/IMapElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab5/Rock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab5/UnboundedMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab7/IPositionChangeObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/lab7/MapBoundary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/EvolvingAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/EvolvingAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Genotype.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Genotype.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapDirection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapDirection$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapDirection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapStatistics.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/ModuloMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/ModuloMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MoveDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MoveDirection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/OptionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/OptionParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/Plant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab4/AnimalIntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab4/GenotypeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab4/GenotypeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab4/MapIntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab4/OptionParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab4/OptionParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab4/RectangularMapTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab4/UnboundedMapTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/properties.json" beforeDir="false" afterPath="$PROJECT_DIR$/properties.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testy/AnimalIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testy/MapIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testy/RectangularMapTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testy/UnboundedMapTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/MapDirection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/MoveDirection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/OptionsParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab3/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab4/IWorldMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab4/MapVisualizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab4/RectangularMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab5/AbstractWorldMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab5/AbstractWorldMapElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab5/Rock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab5/UnboundedMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab7/IPositionChangeObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/lab7/MapBoundary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/AnimalStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/AnimalStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Genotype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Genotype.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapStatistics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/ModuloMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/ModuloMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/Vector2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/GenotypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/GenotypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/OptionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Tests/OptionParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/SafariVisualization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/SafariVisualization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/statistics.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

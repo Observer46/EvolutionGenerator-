@@ -61,7 +61,7 @@ public class SafariVisualization {
         searchField1.setEditable(true);
 
         this.searchField2 = new JTextField("");
-        searchField2.setBounds(750, 620, 300, 20);
+        searchField2.setBounds(600, 620, 300, 20);
         searchField2.setEditable(true);
 
 
@@ -72,29 +72,54 @@ public class SafariVisualization {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                boolean flag = true;
+                boolean flag1 = true;
+
                 String s= searchField1.getText();
+
+                int parsedX=-1;
+                int parsedY=-1;
                 for(int i=0; i<s.length(); i++){
-                    if (s.charAt(i)<48|| s.charAt(i)>57){
-                        flag = false;
-                        break;
-                    }
+                    if (s.charAt(i)=='(')
+                        if (i + 1 < s.length())
+                            parsedX = Character.getNumericValue(s.charAt(i+1));
+                    else if (s.charAt(i)==',')
+                        if(i+1<s.length())
+                            parsedY = Character.getNumericValue(s.charAt(i + 1));
+
                 }
-//                if(flag==true) {
-////                    int pos1 = Integer.parseInt(searchField1.getText());
-////                    firstAnimalDetails.setText(firstNeverEndingMap.getAnimalStatistic(id));
-////                    secondAnimalDetails.setText(secondNeverEndingMap.getAnimalStatistic(id));
-////                }
-////                else{
-////                    firstAnimalDetails.setText("Incorrect search. Choose the animal by id. Available numbers: 0-"+firstNeverEndingMap.getTotalNumberOfAnimals());
-////                    secondAnimalDetails.setText("Incorrect search. Choose the animal by id. Available numbers: 0-"+secondNeverEndingMap.getTotalNumberOfAnimals());
-////                }
+                if(parsedX==-1 || parsedY==-1)  flag1=false;
+                if(flag1){
+                    Vector2d pos1ToObserver = new Vector2d(parsedX,parsedY);
+                    firstModuloMap.setObservedAnimal(pos1ToObserver);
+                    firstAnimalDetails.setText(firstModuloMap.getObservedAnimalStats());
+                }
+                else firstAnimalDetails.setText("Incorrect input");
+
+                boolean flag2 = true;
+                s=searchField2.getText();
+                parsedX=-1;
+                parsedY=-1;
+                for(int i=0; i<s.length(); i++){
+                    if (s.charAt(i)=='(')
+                        if (i + 1 < s.length())
+                            parsedX = Character.getNumericValue(s.charAt(i + 1));
+                        else if (s.charAt(i)==',')
+                            if(i+1<s.length())
+                                parsedY = Character.getNumericValue(s.charAt(i+1));
+                }
+                if(parsedX==-1 || parsedY==-1)  flag2=false;
+                if(flag2){
+                    Vector2d pos2ToObserver = new Vector2d(parsedX,parsedY);
+                    secondModuloMap.setObservedAnimal(pos2ToObserver);
+                    secondAnimalDetails.setText(secondModuloMap.getObservedAnimalStats());
+                }
+                else secondAnimalDetails.setText("Incorrect input");
             }
         });
 
 
         this.stopButton = new JButton("");
-        stopButton.setBounds(50,20,100,20);
+        stopButton.setBounds(500,20,100,20);
         frame.add(stopButton);
 
 
@@ -108,7 +133,7 @@ public class SafariVisualization {
         });
 
         this.endSimulationButton = new JButton("End");
-        endSimulationButton.setBounds(50,60,100,20);
+        endSimulationButton.setBounds(500,60,100,20);
         endSimulationButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -156,7 +181,6 @@ public class SafariVisualization {
             statsToFile.println("Second map:");
             statsToFile.println(secondModuloMap.writeMapStats());
             statsToFile.println("\n");
-            //statsToFile.close();
 
             firstModuloMap.eraPasses();
             secondModuloMap.eraPasses();
@@ -182,16 +206,14 @@ public class SafariVisualization {
             timer = null;
             stopButton.setText("Start");
 
-            firstTextArea.setText(firstModuloMap.toStringExtra());
+            firstTextArea.setText(firstModuloMap.toString());
             frame.add(firstTextArea);
-            secondTextArea.setText(secondModuloMap.toStringExtra());
+            secondTextArea.setText(secondModuloMap.toString());
             frame.add(secondTextArea);
             SwingUtilities.updateComponentTreeUI(frame);
             searchButton.setVisible(true);
-            //int firstAnimalNumber=OptionParser.startAnimalNumber;
-            //int secondAnimalNumber=OptionParser.startAnimalNumber;
-            secondAnimalDetails.setText("Animal Details. Choose the animal by position");
-            firstAnimalDetails.setText("Animal Details. Choose the animal by position");
+            secondAnimalDetails.setText("Choose the animal by typing position (lower left corener is (0,0) )");
+            firstAnimalDetails.setText("Format is: (x,y). For two please type both then press search button");
             secondAnimalDetails.setVisible(true);
             firstAnimalDetails.setVisible(true);
             searchField1.setVisible(true);

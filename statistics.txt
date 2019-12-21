@@ -4,7 +4,7 @@ First map:
 Stats after era 2:
 Number of alive animals: 50
 Number of plants on map: 0
-Dominating genotype: 00000111112233333334444445556667
+Dominating genotype: 01111122222223333344455556666777
 Averge energy of alive animals: 50,00
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,00
@@ -15,7 +15,7 @@ Second map:
 Stats after era 2:
 Number of alive animals: 50
 Number of plants on map: 0
-Dominating genotype: 00000011111223334445555566666777
+Dominating genotype: 00000111122222233333444556666667
 Averge energy of alive animals: 50,00
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,00
@@ -28,7 +28,7 @@ First map:
 Stats after era 5:
 Number of alive animals: 51
 Number of plants on map: 2
-Dominating genotype: 00001111122222333334455666677777
+Dominating genotype: 01111122222223333344455556666777
 Averge energy of alive animals: 48,04
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,04
@@ -37,12 +37,12 @@ Averge children number for alive animals: 0,04
 
 Second map:
 Stats after era 5:
-Number of alive animals: 55
+Number of alive animals: 52
 Number of plants on map: 2
-Dominating genotype: 00000011111223334445555566666777
-Averge energy of alive animals: 44,55
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 47,12
 Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,18
+Averge children number for alive animals: 0,08
 
 
 
@@ -51,9 +51,9 @@ Averge children number for alive animals: 0,18
 First map:
 Stats after era 8:
 Number of alive animals: 54
-Number of plants on map: 4
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 44,43
+Number of plants on map: 3
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 44,46
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,15
 
@@ -61,12 +61,12 @@ Averge children number for alive animals: 0,15
 
 Second map:
 Stats after era 8:
-Number of alive animals: 56
-Number of plants on map: 4
-Dominating genotype: 00000011111223334445555566666777
-Averge energy of alive animals: 42,77
+Number of alive animals: 52
+Number of plants on map: 3
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 46,15
 Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,21
+Averge children number for alive animals: 0,08
 
 
 
@@ -74,47 +74,47 @@ Averge children number for alive animals: 0,21
 
 First map:
 Stats after era 11:
-Number of alive animals: 56
-Number of plants on map: 6
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 41,88
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,21
-
-
-
-Second map:
-Stats after era 11:
 Number of alive animals: 57
-Number of plants on map: 5
-Dominating genotype: 00000011111223334445555566666777
-Averge energy of alive animals: 41,21
+Number of plants on map: 4
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 41,23
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,25
 
 
 
+Second map:
+Stats after era 11:
+Number of alive animals: 55
+Number of plants on map: 5
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 42,69
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,18
+
+
+
 
 
 First map:
 Stats after era 14:
-Number of alive animals: 61
-Number of plants on map: 7
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 37,66
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,36
-
-
-
-Second map:
-Stats after era 14:
-Number of alive animals: 58
+Number of alive animals: 59
 Number of plants on map: 6
-Dominating genotype: 00000011111223334445555566666777
-Averge energy of alive animals: 39,59
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 38,86
 Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,28
+Averge children number for alive animals: 0,31
+
+
+
+Second map:
+Stats after era 14:
+Number of alive animals: 56
+Number of plants on map: 7
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 40,95
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,21
 
 
 
@@ -122,21 +122,93 @@ Averge children number for alive animals: 0,28
 
 First map:
 Stats after era 17:
-Number of alive animals: 64
-Number of plants on map: 9
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 34,94
+Number of alive animals: 63
+Number of plants on map: 6
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 35,62
 Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,44
+Averge children number for alive animals: 0,41
 
 
 
 Second map:
 Stats after era 17:
-Number of alive animals: 60
+Number of alive animals: 59
+Number of plants on map: 5
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 38,34
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,31
+
+
+
+
+
+First map:
+Stats after era 20:
+Number of alive animals: 65
+Number of plants on map: 7
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 33,65
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,46
+
+
+
+Second map:
+Stats after era 20:
+Number of alive animals: 59
+Number of plants on map: 5
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 37,61
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,31
+
+
+
+
+
+First map:
+Stats after era 23:
+Number of alive animals: 66
 Number of plants on map: 8
-Dominating genotype: 00000011111223334445555566666777
-Averge energy of alive animals: 37,30
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 32,26
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,48
+
+
+
+Second map:
+Stats after era 23:
+Number of alive animals: 59
+Number of plants on map: 6
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 36,76
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,31
+
+
+
+
+
+First map:
+Stats after era 26:
+Number of alive animals: 69
+Number of plants on map: 8
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 30,06
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 26:
+Number of alive animals: 60
+Number of plants on map: 6
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 35,38
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,33
 
@@ -145,695 +217,431 @@ Averge children number for alive animals: 0,33
 
 
 First map:
-Stats after era 20:
-Number of alive animals: 66
-Number of plants on map: 10
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 33,00
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,48
-
-
-
-Second map:
-Stats after era 20:
-Number of alive animals: 63
-Number of plants on map: 9
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 34,73
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,41
-
-
-
-
-
-First map:
-Stats after era 23:
-Number of alive animals: 68
-Number of plants on map: 12
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 31,06
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,53
-
-
-
-Second map:
-Stats after era 23:
-Number of alive animals: 65
-Number of plants on map: 10
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 32,80
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,46
-
-
-
-
-
-First map:
-Stats after era 26:
-Number of alive animals: 71
-Number of plants on map: 12
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 29,04
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,59
-
-
-
-Second map:
-Stats after era 26:
-Number of alive animals: 68
-Number of plants on map: 9
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 30,84
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,53
-
-
-
-
-
-First map:
 Stats after era 29:
-Number of alive animals: 72
-Number of plants on map: 12
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 27,92
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,61
-
-
-
-Second map:
-Stats after era 29:
-Number of alive animals: 71
-Number of plants on map: 9
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 28,85
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,59
-
-
-
-
-
-First map:
-Stats after era 32:
-Number of alive animals: 73
-Number of plants on map: 11
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 26,96
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,63
-
-
-
-Second map:
-Stats after era 32:
-Number of alive animals: 73
-Number of plants on map: 11
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 27,08
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,63
-
-
-
-
-
-First map:
-Stats after era 35:
-Number of alive animals: 73
-Number of plants on map: 10
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 26,37
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,63
-
-
-
-Second map:
-Stats after era 35:
-Number of alive animals: 76
-Number of plants on map: 10
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 25,45
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,68
-
-
-
-
-
-First map:
-Stats after era 38:
-Number of alive animals: 74
-Number of plants on map: 11
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 25,16
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,65
-
-
-
-Second map:
-Stats after era 38:
-Number of alive animals: 77
-Number of plants on map: 10
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 24,39
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,70
-
-
-
-
-
-First map:
-Stats after era 41:
-Number of alive animals: 74
-Number of plants on map: 12
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 24,30
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,65
-
-
-
-Second map:
-Stats after era 41:
-Number of alive animals: 77
-Number of plants on map: 9
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 23,78
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,70
-
-
-
-
-
-First map:
-Stats after era 44:
-Number of alive animals: 74
-Number of plants on map: 12
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 23,57
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,65
-
-
-
-Second map:
-Stats after era 44:
-Number of alive animals: 78
-Number of plants on map: 9
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 22,74
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,72
-
-
-
-
-
-First map:
-Stats after era 47:
-Number of alive animals: 74
-Number of plants on map: 11
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 22,97
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,65
-
-
-
-Second map:
-Stats after era 47:
-Number of alive animals: 79
+Number of alive animals: 70
 Number of plants on map: 8
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 21,80
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 28,93
 Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,73
+Averge children number for alive animals: 0,57
+
+
+
+Second map:
+Stats after era 29:
+Number of alive animals: 62
+Number of plants on map: 7
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 33,31
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,39
 
 
 
 
 
 First map:
-Stats after era 50:
+Stats after era 32:
+Number of alive animals: 71
+Number of plants on map: 7
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 27,85
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,59
+
+
+
+Second map:
+Stats after era 32:
+Number of alive animals: 64
+Number of plants on map: 9
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 31,30
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,44
+
+
+
+
+
+First map:
+Stats after era 35:
+Number of alive animals: 74
+Number of plants on map: 7
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 26,03
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,65
+
+
+
+Second map:
+Stats after era 35:
+Number of alive animals: 67
+Number of plants on map: 11
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 28,94
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,51
+
+
+
+
+
+First map:
+Stats after era 38:
 Number of alive animals: 75
-Number of plants on map: 10
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 22,08
+Number of plants on map: 8
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 24,83
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,67
 
 
 
 Second map:
-Stats after era 50:
-Number of alive animals: 79
-Number of plants on map: 9
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 20,92
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,73
-
-
-
-
-
-First map:
-Stats after era 53:
-Number of alive animals: 76
-Number of plants on map: 11
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 20,93
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,68
-
-
-
-Second map:
-Stats after era 53:
-Number of alive animals: 79
-Number of plants on map: 10
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 20,05
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,73
-
-
-
-
-
-First map:
-Stats after era 56:
-Number of alive animals: 76
-Number of plants on map: 10
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 20,33
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,68
-
-
-
-Second map:
-Stats after era 56:
-Number of alive animals: 79
-Number of plants on map: 10
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 19,30
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,73
-
-
-
-
-
-First map:
-Stats after era 59:
-Number of alive animals: 76
-Number of plants on map: 8
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 19,86
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,68
-
-
-
-Second map:
-Stats after era 59:
-Number of alive animals: 79
+Stats after era 38:
+Number of alive animals: 71
 Number of plants on map: 12
-Dominating genotype: 00000011111223334444555556666777
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 26,51
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,59
+
+
+
+
+
+First map:
+Stats after era 41:
+Number of alive animals: 75
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 23,96
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,67
+
+
+
+Second map:
+Stats after era 41:
+Number of alive animals: 72
+Number of plants on map: 12
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 25,43
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,61
+
+
+
+
+
+First map:
+Stats after era 44:
+Number of alive animals: 76
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 22,92
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,68
+
+
+
+Second map:
+Stats after era 44:
+Number of alive animals: 72
+Number of plants on map: 13
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 24,57
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,61
+
+
+
+
+
+First map:
+Stats after era 47:
+Number of alive animals: 77
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,90
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,70
+
+
+
+Second map:
+Stats after era 47:
+Number of alive animals: 73
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 23,38
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
+
+
+First map:
+Stats after era 50:
+Number of alive animals: 77
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,16
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,70
+
+
+
+Second map:
+Stats after era 50:
+Number of alive animals: 73
+Number of plants on map: 12
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 22,93
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
+
+
+First map:
+Stats after era 53:
+Number of alive animals: 78
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,15
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,72
+
+
+
+Second map:
+Stats after era 53:
+Number of alive animals: 73
+Number of plants on map: 13
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 22,07
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
+
+
+First map:
+Stats after era 56:
+Number of alive animals: 78
+Number of plants on map: 8
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 19,54
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,72
+
+
+
+Second map:
+Stats after era 56:
+Number of alive animals: 73
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 21,18
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
+
+
+First map:
+Stats after era 59:
+Number of alive animals: 79
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
 Averge energy of alive animals: 18,30
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,73
 
 
 
+Second map:
+Stats after era 59:
+Number of alive animals: 73
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 20,45
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
 
 
 First map:
 Stats after era 62:
-Number of alive animals: 75
-Number of plants on map: 9
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 19,25
-Averge number of lived eras of dead animals: 17,00
-Averge children number for alive animals: 0,69
-
-
-
-Second map:
-Stats after era 62:
 Number of alive animals: 79
-Number of plants on map: 12
-Dominating genotype: 00000011111223334444555556666777
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
 Averge energy of alive animals: 17,56
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,73
 
 
 
+Second map:
+Stats after era 62:
+Number of alive animals: 73
+Number of plants on map: 15
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,59
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
 
 
 First map:
-Stats after era 66:
-Number of alive animals: 75
-Number of plants on map: 9
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 18,52
-Averge number of lived eras of dead animals: 17,00
-Averge children number for alive animals: 0,69
-
-
-
-Second map:
-Stats after era 66:
+Stats after era 65:
 Number of alive animals: 79
-Number of plants on map: 13
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 16,68
+Number of plants on map: 7
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 17,19
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,73
 
 
 
+Second map:
+Stats after era 65:
+Number of alive animals: 73
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,00
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
+
+
+
 
 
 First map:
-Stats after era 69:
-Number of alive animals: 74
-Number of plants on map: 10
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 17,91
-Averge number of lived eras of dead animals: 17,50
-Averge children number for alive animals: 0,70
-
-
-
-Second map:
-Stats after era 69:
+Stats after era 68:
 Number of alive animals: 79
-Number of plants on map: 10
-Dominating genotype: 00000011111223334444555556666777
+Number of plants on map: 8
+Dominating genotype: 00001111122223334445555666667777
 Averge energy of alive animals: 16,32
 Averge number of lived eras of dead animals: 0,00
 Averge children number for alive animals: 0,73
 
 
 
-
-
-First map:
-Stats after era 72:
-Number of alive animals: 74
-Number of plants on map: 12
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 16,91
-Averge number of lived eras of dead animals: 17,50
-Averge children number for alive animals: 0,70
-
-
-
 Second map:
-Stats after era 72:
-Number of alive animals: 79
-Number of plants on map: 12
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 15,32
-Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,73
-
-
-
-
-
-First map:
-Stats after era 75:
+Stats after era 68:
 Number of alive animals: 73
-Number of plants on map: 13
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 16,27
-Averge number of lived eras of dead animals: 17,00
-Averge children number for alive animals: 0,71
-
-
-
-Second map:
-Stats after era 75:
-Number of alive animals: 79
 Number of plants on map: 12
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,57
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 18,55
 Averge number of lived eras of dead animals: 0,00
-Averge children number for alive animals: 0,73
+Averge children number for alive animals: 0,63
 
 
 
 
 
 First map:
-Stats after era 78:
-Number of alive animals: 71
-Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 15,87
-Averge number of lived eras of dead animals: 19,00
-Averge children number for alive animals: 0,69
-
-
-
-Second map:
-Stats after era 78:
+Stats after era 71:
 Number of alive animals: 77
-Number of plants on map: 14
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 13,95
-Averge number of lived eras of dead animals: 19,50
-Averge children number for alive animals: 0,71
-
-
-
-
-
-First map:
-Stats after era 81:
-Number of alive animals: 69
-Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 15,62
-Averge number of lived eras of dead animals: 19,57
-Averge children number for alive animals: 0,71
-
-
-
-Second map:
-Stats after era 81:
-Number of alive animals: 70
-Number of plants on map: 14
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,64
-Averge number of lived eras of dead animals: 19,30
-Averge children number for alive animals: 0,81
-
-
-
-
-
-First map:
-Stats after era 84:
-Number of alive animals: 67
-Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 15,39
-Averge number of lived eras of dead animals: 19,78
-Averge children number for alive animals: 0,73
-
-
-
-Second map:
-Stats after era 84:
-Number of alive animals: 67
-Number of plants on map: 16
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,30
-Averge number of lived eras of dead animals: 18,85
-Averge children number for alive animals: 0,85
-
-
-
-
-
-First map:
-Stats after era 87:
-Number of alive animals: 65
-Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 15,17
-Averge number of lived eras of dead animals: 19,45
+Number of plants on map: 8
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 16,00
+Averge number of lived eras of dead animals: 17,50
 Averge children number for alive animals: 0,75
 
 
 
 Second map:
-Stats after era 87:
-Number of alive animals: 63
-Number of plants on map: 16
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,52
-Averge number of lived eras of dead animals: 18,53
-Averge children number for alive animals: 0,90
-
-
-
-
-
-First map:
-Stats after era 90:
-Number of alive animals: 63
-Number of plants on map: 15
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 14,81
-Averge number of lived eras of dead animals: 20,15
-Averge children number for alive animals: 0,78
-
-
-
-Second map:
-Stats after era 90:
-Number of alive animals: 62
-Number of plants on map: 16
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,08
-Averge number of lived eras of dead animals: 18,78
-Averge children number for alive animals: 0,92
-
-
-
-
-
-First map:
-Stats after era 93:
-Number of alive animals: 64
+Stats after era 71:
+Number of alive animals: 73
 Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 14,06
-Averge number of lived eras of dead animals: 20,15
-Averge children number for alive animals: 0,80
-
-
-
-Second map:
-Stats after era 93:
-Number of alive animals: 62
-Number of plants on map: 18
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 13,08
-Averge number of lived eras of dead animals: 18,78
-Averge children number for alive animals: 0,92
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,55
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
 
 
 
 
 
 First map:
-Stats after era 96:
-Number of alive animals: 62
-Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 13,84
-Averge number of lived eras of dead animals: 21,47
+Stats after era 74:
+Number of alive animals: 76
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,21
+Averge number of lived eras of dead animals: 16,00
 Averge children number for alive animals: 0,76
 
 
 
 Second map:
-Stats after era 96:
-Number of alive animals: 59
-Number of plants on map: 18
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 13,08
-Averge number of lived eras of dead animals: 20,05
-Averge children number for alive animals: 0,90
-
-
-
-
-
-First map:
-Stats after era 99:
-Number of alive animals: 59
+Stats after era 74:
+Number of alive animals: 73
 Number of plants on map: 13
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 14,05
-Averge number of lived eras of dead animals: 23,06
-Averge children number for alive animals: 0,69
-
-
-
-Second map:
-Stats after era 99:
-Number of alive animals: 57
-Number of plants on map: 18
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 12,89
-Averge number of lived eras of dead animals: 21,00
-Averge children number for alive animals: 0,86
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,96
+Averge number of lived eras of dead animals: 0,00
+Averge children number for alive animals: 0,63
 
 
 
 
 
 First map:
-Stats after era 102:
-Number of alive animals: 52
-Number of plants on map: 14
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 15,13
-Averge number of lived eras of dead animals: 25,28
-Averge children number for alive animals: 0,56
+Stats after era 77:
+Number of alive animals: 74
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,03
+Averge number of lived eras of dead animals: 17,60
+Averge children number for alive animals: 0,78
 
 
 
 Second map:
-Stats after era 102:
-Number of alive animals: 52
-Number of plants on map: 19
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 13,33
-Averge number of lived eras of dead animals: 22,82
-Averge children number for alive animals: 0,79
+Stats after era 77:
+Number of alive animals: 72
+Number of plants on map: 12
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,61
+Averge number of lived eras of dead animals: 20,00
+Averge children number for alive animals: 0,64
 
 
 
 
 
 First map:
-Stats after era 105:
-Number of alive animals: 52
-Number of plants on map: 13
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 14,71
-Averge number of lived eras of dead animals: 25,28
-Averge children number for alive animals: 0,56
+Stats after era 80:
+Number of alive animals: 68
+Number of plants on map: 8
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,79
+Averge number of lived eras of dead animals: 18,73
+Averge children number for alive animals: 0,85
 
 
 
 Second map:
-Stats after era 105:
-Number of alive animals: 47
-Number of plants on map: 17
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,60
-Averge number of lived eras of dead animals: 24,36
+Stats after era 80:
+Number of alive animals: 70
+Number of plants on map: 12
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,37
+Averge number of lived eras of dead animals: 22,67
 Averge children number for alive animals: 0,66
 
 
@@ -841,48 +649,1423 @@ Averge children number for alive animals: 0,66
 
 
 First map:
-Stats after era 108:
-Number of alive animals: 52
-Number of plants on map: 13
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 14,10
-Averge number of lived eras of dead animals: 25,28
-Averge children number for alive animals: 0,56
+Stats after era 83:
+Number of alive animals: 63
+Number of plants on map: 9
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 16,21
+Averge number of lived eras of dead animals: 19,88
+Averge children number for alive animals: 0,92
 
 
 
 Second map:
-Stats after era 108:
-Number of alive animals: 45
-Number of plants on map: 16
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 14,80
-Averge number of lived eras of dead animals: 24,80
-Averge children number for alive animals: 0,64
+Stats after era 83:
+Number of alive animals: 68
+Number of plants on map: 13
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,00
+Averge number of lived eras of dead animals: 20,20
+Averge children number for alive animals: 0,68
 
 
 
 
 
 First map:
-Stats after era 111:
+Stats after era 86:
+Number of alive animals: 61
+Number of plants on map: 11
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,74
+Averge number of lived eras of dead animals: 19,83
+Averge children number for alive animals: 0,95
+
+
+
+Second map:
+Stats after era 86:
+Number of alive animals: 68
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 15,13
+Averge number of lived eras of dead animals: 20,20
+Averge children number for alive animals: 0,68
+
+
+
+
+
+First map:
+Stats after era 89:
+Number of alive animals: 61
+Number of plants on map: 13
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,74
+Averge number of lived eras of dead animals: 19,83
+Averge children number for alive animals: 0,95
+
+
+
+Second map:
+Stats after era 89:
+Number of alive animals: 66
+Number of plants on map: 16
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,59
+Averge number of lived eras of dead animals: 19,29
+Averge children number for alive animals: 0,70
+
+
+
+
+
+First map:
+Stats after era 92:
+Number of alive animals: 61
+Number of plants on map: 13
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,07
+Averge number of lived eras of dead animals: 19,83
+Averge children number for alive animals: 0,95
+
+
+
+Second map:
+Stats after era 92:
+Number of alive animals: 63
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,79
+Averge number of lived eras of dead animals: 18,90
+Averge children number for alive animals: 0,73
+
+
+
+
+
+First map:
+Stats after era 95:
+Number of alive animals: 59
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,39
+Averge number of lived eras of dead animals: 20,85
+Averge children number for alive animals: 0,92
+
+
+
+Second map:
+Stats after era 95:
+Number of alive animals: 61
+Number of plants on map: 14
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,61
+Averge number of lived eras of dead animals: 19,33
+Averge children number for alive animals: 0,75
+
+
+
+
+
+First map:
+Stats after era 98:
+Number of alive animals: 57
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,25
+Averge number of lived eras of dead animals: 21,77
+Averge children number for alive animals: 0,88
+
+
+
+Second map:
+Stats after era 98:
+Number of alive animals: 58
+Number of plants on map: 16
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,36
+Averge number of lived eras of dead animals: 21,40
+Averge children number for alive animals: 0,71
+
+
+
+
+
+First map:
+Stats after era 101:
 Number of alive animals: 51
-Number of plants on map: 15
-Dominating genotype: 00001111122222333334455666677777
-Averge energy of alive animals: 13,37
-Averge number of lived eras of dead animals: 25,65
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,31
+Averge number of lived eras of dead animals: 23,96
+Averge children number for alive animals: 0,75
+
+
+
+Second map:
+Stats after era 101:
+Number of alive animals: 56
+Number of plants on map: 17
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,05
+Averge number of lived eras of dead animals: 22,65
+Averge children number for alive animals: 0,66
+
+
+
+
+
+First map:
+Stats after era 104:
+Number of alive animals: 50
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,04
+Averge number of lived eras of dead animals: 23,57
+Averge children number for alive animals: 0,80
+
+
+
+Second map:
+Stats after era 104:
+Number of alive animals: 53
+Number of plants on map: 19
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 13,85
+Averge number of lived eras of dead animals: 23,55
+Averge children number for alive animals: 0,66
+
+
+
+
+
+First map:
+Stats after era 107:
+Number of alive animals: 49
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,76
+Averge number of lived eras of dead animals: 23,48
+Averge children number for alive animals: 0,82
+
+
+
+Second map:
+Stats after era 107:
+Number of alive animals: 51
+Number of plants on map: 20
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 13,59
+Averge number of lived eras of dead animals: 24,50
+Averge children number for alive animals: 0,61
+
+
+
+
+
+First map:
+Stats after era 110:
+Number of alive animals: 49
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,16
+Averge number of lived eras of dead animals: 23,48
+Averge children number for alive animals: 0,82
+
+
+
+Second map:
+Stats after era 110:
+Number of alive animals: 48
+Number of plants on map: 18
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,27
+Averge number of lived eras of dead animals: 25,68
+Averge children number for alive animals: 0,60
+
+
+
+
+
+First map:
+Stats after era 113:
+Number of alive animals: 47
+Number of plants on map: 11
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,98
+Averge number of lived eras of dead animals: 23,67
+Averge children number for alive animals: 0,85
+
+
+
+Second map:
+Stats after era 113:
+Number of alive animals: 48
+Number of plants on map: 17
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 13,90
+Averge number of lived eras of dead animals: 25,68
+Averge children number for alive animals: 0,60
+
+
+
+
+
+First map:
+Stats after era 116:
+Number of alive animals: 45
+Number of plants on map: 10
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,27
+Averge number of lived eras of dead animals: 24,06
+Averge children number for alive animals: 0,89
+
+
+
+Second map:
+Stats after era 116:
+Number of alive animals: 44
+Number of plants on map: 16
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,84
+Averge number of lived eras of dead animals: 26,41
+Averge children number for alive animals: 0,61
+
+
+
+
+
+First map:
+Stats after era 119:
+Number of alive animals: 44
+Number of plants on map: 12
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,59
+Averge number of lived eras of dead animals: 24,44
+Averge children number for alive animals: 0,89
+
+
+
+Second map:
+Stats after era 119:
+Number of alive animals: 44
+Number of plants on map: 16
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 14,30
+Averge number of lived eras of dead animals: 26,41
+Averge children number for alive animals: 0,61
+
+
+
+
+
+First map:
+Stats after era 122:
+Number of alive animals: 42
+Number of plants on map: 12
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,71
+Averge number of lived eras of dead animals: 25,21
+Averge children number for alive animals: 0,88
+
+
+
+Second map:
+Stats after era 122:
+Number of alive animals: 36
+Number of plants on map: 18
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,47
+Averge number of lived eras of dead animals: 28,81
+Averge children number for alive animals: 0,56
+
+
+
+
+
+First map:
+Stats after era 125:
+Number of alive animals: 39
+Number of plants on map: 14
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,77
+Averge number of lived eras of dead animals: 26,07
+Averge children number for alive animals: 0,87
+
+
+
+Second map:
+Stats after era 125:
+Number of alive animals: 34
+Number of plants on map: 19
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,74
+Averge number of lived eras of dead animals: 29,38
+Averge children number for alive animals: 0,53
+
+
+
+
+
+First map:
+Stats after era 128:
+Number of alive animals: 37
+Number of plants on map: 16
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,51
+Averge number of lived eras of dead animals: 26,77
+Averge children number for alive animals: 0,84
+
+
+
+Second map:
+Stats after era 128:
+Number of alive animals: 32
+Number of plants on map: 20
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,09
+Averge number of lived eras of dead animals: 29,95
+Averge children number for alive animals: 0,50
+
+
+
+
+
+First map:
+Stats after era 131:
+Number of alive animals: 33
+Number of plants on map: 18
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,15
+Averge number of lived eras of dead animals: 28,06
+Averge children number for alive animals: 0,73
+
+
+
+Second map:
+Stats after era 131:
+Number of alive animals: 31
+Number of plants on map: 20
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,29
+Averge number of lived eras of dead animals: 30,24
+Averge children number for alive animals: 0,48
+
+
+
+
+
+First map:
+Stats after era 134:
+Number of alive animals: 32
+Number of plants on map: 19
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,91
+Averge number of lived eras of dead animals: 28,38
+Averge children number for alive animals: 0,69
+
+
+
+Second map:
+Stats after era 134:
+Number of alive animals: 29
+Number of plants on map: 21
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,83
+Averge number of lived eras of dead animals: 30,82
+Averge children number for alive animals: 0,38
+
+
+
+
+
+First map:
+Stats after era 137:
+Number of alive animals: 31
+Number of plants on map: 21
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,35
+Averge number of lived eras of dead animals: 28,69
+Averge children number for alive animals: 0,68
+
+
+
+Second map:
+Stats after era 137:
+Number of alive animals: 29
+Number of plants on map: 21
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,52
+Averge number of lived eras of dead animals: 30,82
+Averge children number for alive animals: 0,38
+
+
+
+
+
+First map:
+Stats after era 140:
+Number of alive animals: 30
+Number of plants on map: 21
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,47
+Averge number of lived eras of dead animals: 28,88
+Averge children number for alive animals: 0,70
+
+
+
+Second map:
+Stats after era 140:
+Number of alive animals: 28
+Number of plants on map: 22
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,50
+Averge number of lived eras of dead animals: 31,13
+Averge children number for alive animals: 0,36
+
+
+
+
+
+First map:
+Stats after era 143:
+Number of alive animals: 30
+Number of plants on map: 20
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,47
+Averge number of lived eras of dead animals: 28,88
+Averge children number for alive animals: 0,70
+
+
+
+Second map:
+Stats after era 143:
+Number of alive animals: 28
+Number of plants on map: 22
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,21
+Averge number of lived eras of dead animals: 31,13
+Averge children number for alive animals: 0,36
+
+
+
+
+
+First map:
+Stats after era 146:
+Number of alive animals: 30
+Number of plants on map: 20
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,13
+Averge number of lived eras of dead animals: 28,88
+Averge children number for alive animals: 0,70
+
+
+
+Second map:
+Stats after era 146:
+Number of alive animals: 28
+Number of plants on map: 21
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,29
+Averge number of lived eras of dead animals: 31,13
+Averge children number for alive animals: 0,36
+
+
+
+
+
+First map:
+Stats after era 149:
+Number of alive animals: 29
+Number of plants on map: 21
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 12,93
+Averge number of lived eras of dead animals: 28,61
+Averge children number for alive animals: 0,72
+
+
+
+Second map:
+Stats after era 149:
+Number of alive animals: 28
+Number of plants on map: 21
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 16,96
+Averge number of lived eras of dead animals: 31,13
+Averge children number for alive animals: 0,36
+
+
+
+
+
+First map:
+Stats after era 152:
+Number of alive animals: 29
+Number of plants on map: 21
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 12,62
+Averge number of lived eras of dead animals: 28,61
+Averge children number for alive animals: 0,72
+
+
+
+Second map:
+Stats after era 152:
+Number of alive animals: 26
+Number of plants on map: 22
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,65
+Averge number of lived eras of dead animals: 31,68
+Averge children number for alive animals: 0,35
+
+
+
+
+
+First map:
+Stats after era 155:
+Number of alive animals: 27
+Number of plants on map: 21
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,30
+Averge number of lived eras of dead animals: 29,42
+Averge children number for alive animals: 0,78
+
+
+
+Second map:
+Stats after era 155:
+Number of alive animals: 22
+Number of plants on map: 24
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,86
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 158:
+Number of alive animals: 26
+Number of plants on map: 20
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 13,96
+Averge number of lived eras of dead animals: 29,81
+Averge children number for alive animals: 0,77
+
+
+
+Second map:
+Stats after era 158:
+Number of alive animals: 22
+Number of plants on map: 23
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 20,23
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 161:
+Number of alive animals: 25
+Number of plants on map: 19
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,72
+Averge number of lived eras of dead animals: 30,22
+Averge children number for alive animals: 0,72
+
+
+
+Second map:
+Stats after era 161:
+Number of alive animals: 22
+Number of plants on map: 25
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,23
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 164:
+Number of alive animals: 24
+Number of plants on map: 17
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 16,00
+Averge number of lived eras of dead animals: 30,62
+Averge children number for alive animals: 0,75
+
+
+
+Second map:
+Stats after era 164:
+Number of alive animals: 22
+Number of plants on map: 24
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,36
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 167:
+Number of alive animals: 24
+Number of plants on map: 19
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,00
+Averge number of lived eras of dead animals: 30,62
+Averge children number for alive animals: 0,75
+
+
+
+Second map:
+Stats after era 167:
+Number of alive animals: 22
+Number of plants on map: 25
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 18,82
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 170:
+Number of alive animals: 22
+Number of plants on map: 19
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 16,05
+Averge number of lived eras of dead animals: 31,47
+Averge children number for alive animals: 0,68
+
+
+
+Second map:
+Stats after era 170:
+Number of alive animals: 22
+Number of plants on map: 25
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 18,73
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 173:
+Number of alive animals: 21
+Number of plants on map: 20
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 16,29
+Averge number of lived eras of dead animals: 31,88
 Averge children number for alive animals: 0,57
 
 
 
 Second map:
-Stats after era 111:
-Number of alive animals: 45
-Number of plants on map: 18
-Dominating genotype: 00000011111223334444555556666777
-Averge energy of alive animals: 13,80
-Averge number of lived eras of dead animals: 24,80
+Stats after era 173:
+Number of alive animals: 22
+Number of plants on map: 26
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 18,18
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 176:
+Number of alive animals: 21
+Number of plants on map: 22
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 15,29
+Averge number of lived eras of dead animals: 31,88
+Averge children number for alive animals: 0,57
+
+
+
+Second map:
+Stats after era 176:
+Number of alive animals: 22
+Number of plants on map: 26
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 17,82
+Averge number of lived eras of dead animals: 33,12
+Averge children number for alive animals: 0,41
+
+
+
+
+
+First map:
+Stats after era 179:
+Number of alive animals: 21
+Number of plants on map: 24
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,29
+Averge number of lived eras of dead animals: 31,88
+Averge children number for alive animals: 0,57
+
+
+
+Second map:
+Stats after era 179:
+Number of alive animals: 21
+Number of plants on map: 25
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,10
+Averge number of lived eras of dead animals: 33,60
+Averge children number for alive animals: 0,38
+
+
+
+
+
+First map:
+Stats after era 182:
+Number of alive animals: 20
+Number of plants on map: 25
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 14,50
+Averge number of lived eras of dead animals: 32,33
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 182:
+Number of alive animals: 20
+Number of plants on map: 26
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 19,55
+Averge number of lived eras of dead animals: 34,08
+Averge children number for alive animals: 0,35
+
+
+
+
+
+First map:
+Stats after era 185:
+Number of alive animals: 15
+Number of plants on map: 25
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 19,67
+Averge number of lived eras of dead animals: 34,46
+Averge children number for alive animals: 0,60
+
+
+
+Second map:
+Stats after era 185:
+Number of alive animals: 18
+Number of plants on map: 27
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 21,28
+Averge number of lived eras of dead animals: 35,02
+Averge children number for alive animals: 0,39
+
+
+
+
+
+First map:
+Stats after era 188:
+Number of alive animals: 15
+Number of plants on map: 26
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 19,33
+Averge number of lived eras of dead animals: 34,46
+Averge children number for alive animals: 0,60
+
+
+
+Second map:
+Stats after era 188:
+Number of alive animals: 16
+Number of plants on map: 26
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 24,81
+Averge number of lived eras of dead animals: 35,93
+Averge children number for alive animals: 0,31
+
+
+
+
+
+First map:
+Stats after era 191:
+Number of alive animals: 15
+Number of plants on map: 27
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 19,00
+Averge number of lived eras of dead animals: 34,46
+Averge children number for alive animals: 0,60
+
+
+
+Second map:
+Stats after era 191:
+Number of alive animals: 15
+Number of plants on map: 27
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 26,13
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 194:
+Number of alive animals: 15
+Number of plants on map: 28
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 18,67
+Averge number of lived eras of dead animals: 34,46
+Averge children number for alive animals: 0,60
+
+
+
+Second map:
+Stats after era 194:
+Number of alive animals: 15
+Number of plants on map: 29
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 25,13
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 197:
+Number of alive animals: 15
+Number of plants on map: 29
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 18,33
+Averge number of lived eras of dead animals: 34,46
+Averge children number for alive animals: 0,60
+
+
+
+Second map:
+Stats after era 197:
+Number of alive animals: 15
+Number of plants on map: 29
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 25,47
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 200:
+Number of alive animals: 14
+Number of plants on map: 28
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,79
+Averge number of lived eras of dead animals: 34,92
 Averge children number for alive animals: 0,64
 
 
 
+Second map:
+Stats after era 200:
+Number of alive animals: 15
+Number of plants on map: 29
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 25,67
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 203:
+Number of alive animals: 14
+Number of plants on map: 29
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,50
+Averge number of lived eras of dead animals: 34,92
+Averge children number for alive animals: 0,64
+
+
+
+Second map:
+Stats after era 203:
+Number of alive animals: 15
+Number of plants on map: 31
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 24,67
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 206:
+Number of alive animals: 14
+Number of plants on map: 29
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,79
+Averge number of lived eras of dead animals: 34,92
+Averge children number for alive animals: 0,64
+
+
+
+Second map:
+Stats after era 206:
+Number of alive animals: 15
+Number of plants on map: 31
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 25,00
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 209:
+Number of alive animals: 14
+Number of plants on map: 30
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,50
+Averge number of lived eras of dead animals: 34,92
+Averge children number for alive animals: 0,64
+
+
+
+Second map:
+Stats after era 209:
+Number of alive animals: 15
+Number of plants on map: 32
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 24,67
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 212:
+Number of alive animals: 14
+Number of plants on map: 30
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,36
+Averge number of lived eras of dead animals: 34,92
+Averge children number for alive animals: 0,64
+
+
+
+Second map:
+Stats after era 212:
+Number of alive animals: 15
+Number of plants on map: 34
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 23,67
+Averge number of lived eras of dead animals: 36,38
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 215:
+Number of alive animals: 13
+Number of plants on map: 30
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,38
+Averge number of lived eras of dead animals: 35,45
+Averge children number for alive animals: 0,62
+
+
+
+Second map:
+Stats after era 215:
+Number of alive animals: 13
+Number of plants on map: 35
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 27,08
+Averge number of lived eras of dead animals: 37,50
+Averge children number for alive animals: 0,38
+
+
+
+
+
+First map:
+Stats after era 218:
+Number of alive animals: 13
+Number of plants on map: 32
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,38
+Averge number of lived eras of dead animals: 35,45
+Averge children number for alive animals: 0,62
+
+
+
+Second map:
+Stats after era 218:
+Number of alive animals: 12
+Number of plants on map: 35
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 29,67
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 221:
+Number of alive animals: 13
+Number of plants on map: 33
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,15
+Averge number of lived eras of dead animals: 35,45
+Averge children number for alive animals: 0,62
+
+
+
+Second map:
+Stats after era 221:
+Number of alive animals: 12
+Number of plants on map: 35
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,33
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 224:
+Number of alive animals: 12
+Number of plants on map: 34
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,67
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 224:
+Number of alive animals: 12
+Number of plants on map: 35
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,67
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 227:
+Number of alive animals: 12
+Number of plants on map: 34
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 22,33
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 227:
+Number of alive animals: 12
+Number of plants on map: 36
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,50
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 230:
+Number of alive animals: 12
+Number of plants on map: 36
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,33
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 230:
+Number of alive animals: 12
+Number of plants on map: 37
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,33
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 233:
+Number of alive animals: 12
+Number of plants on map: 36
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 22,00
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 233:
+Number of alive animals: 12
+Number of plants on map: 37
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 31,00
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 236:
+Number of alive animals: 12
+Number of plants on map: 37
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,83
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 236:
+Number of alive animals: 12
+Number of plants on map: 38
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,83
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 239:
+Number of alive animals: 12
+Number of plants on map: 39
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,83
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 239:
+Number of alive animals: 12
+Number of plants on map: 39
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,67
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 242:
+Number of alive animals: 12
+Number of plants on map: 41
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 19,83
+Averge number of lived eras of dead animals: 36,00
+Averge children number for alive animals: 0,50
+
+
+
+Second map:
+Stats after era 242:
+Number of alive animals: 12
+Number of plants on map: 39
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 31,33
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 245:
+Number of alive animals: 11
+Number of plants on map: 42
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,55
+Averge number of lived eras of dead animals: 36,64
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 245:
+Number of alive animals: 12
+Number of plants on map: 41
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,33
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 248:
+Number of alive animals: 11
+Number of plants on map: 43
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,45
+Averge number of lived eras of dead animals: 36,64
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 248:
+Number of alive animals: 12
+Number of plants on map: 43
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 29,33
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 251:
+Number of alive animals: 11
+Number of plants on map: 44
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,36
+Averge number of lived eras of dead animals: 36,64
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 251:
+Number of alive animals: 12
+Number of plants on map: 43
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 29,92
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 254:
+Number of alive animals: 11
+Number of plants on map: 45
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 21,27
+Averge number of lived eras of dead animals: 36,64
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 254:
+Number of alive animals: 12
+Number of plants on map: 42
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,17
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 257:
+Number of alive animals: 11
+Number of plants on map: 47
+Dominating genotype: 00001111122223334445555666667777
+Averge energy of alive animals: 20,27
+Averge number of lived eras of dead animals: 36,64
+Averge children number for alive animals: 0,55
+
+
+
+Second map:
+Stats after era 257:
+Number of alive animals: 12
+Number of plants on map: 42
+Dominating genotype: 00000111122222233333444556666667
+Averge energy of alive animals: 30,08
+Averge number of lived eras of dead animals: 38,05
+Averge children number for alive animals: 0,33
+
+
+
+
+
+First map:
+Stats after era 260:
+Number of alive animals: 11
+Number of plants on map: 47
+Dominating genotype: 000

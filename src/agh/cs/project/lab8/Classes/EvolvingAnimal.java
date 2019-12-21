@@ -13,7 +13,6 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
     public static int maxEnergyLimit;
     private List<IPositionChangeObserver> observers = new ArrayList<>();
     private AnimalStatistics animalStats;
-    private boolean hasDominatingGenotype=false;
     private boolean isSelectedForObservation=false;
 
 
@@ -47,6 +46,8 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
     public void stopObserving(){
         this.isSelectedForObservation=false;
     }
+
+
 
     public int getEnergy(){
         return this.energy;
@@ -134,7 +135,7 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
             s=Character.toString((char) 9786)+ " ";
         else
             s=Character.toString((char) 9785)+ " ";
-        if(this.hasDominatingGenotype)
+        if(this.map.getMapStats().getAnimalsWithDominatingGenotype().contains(this))    // Te są dominujące
             s=Character.toString((char) 9854)+ " ";
         if(this.isSelectedForObservation){
             s=Character.toString((char) 9733)+ " ";

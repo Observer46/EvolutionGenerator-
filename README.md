@@ -1,3 +1,2 @@
-# Henlo
-## Generator ewolucyjny - projekt z przedmiotu Progoramowanie Obiektowy
-### Projekt jest jeszcze rozkopany - walczymy do 23:59 
+# Generator ewolucyjny - projekt z przedmiotu Progoramowanie Obiektowy
+### Program uruchamia się kompilując klasę World.java, która znajduje się w folderze /src/.../Classes

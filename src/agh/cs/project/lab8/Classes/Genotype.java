@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Genotype {
-    private static int genoSize=32;
+    public static int genoSize=32;
     private int[] genes=new int[genoSize];
 
 
@@ -15,14 +15,12 @@ public class Genotype {
         for(int i=8; i<genoSize;i++){
             genes[i]= new Random().nextInt(8);
         }
-        //this.fixGenes();
         Arrays.sort(genes);
     }
     public Genotype(int[] mixedGenes){
         this.genes=mixedGenes;
         this.fixGenes();
 
-        //this.genes=mixedGenes;
     }
 
     public int[] getGenes(){
@@ -35,17 +33,18 @@ public class Genotype {
 
     public void fixGenes(){
         int [] geneCounter = new int[8];
+        for(int i=0;i<8;i++)    geneCounter[i]=0;
 
-        for(int gene : genes){
+        for(int gene : genes)
             geneCounter[gene]++;
-        }
+
 
         for(int i=0; i<8;i++){
             int geneCount = geneCounter[i];
             if (geneCount==0)
                 fixSingleGene(geneCounter,i);
         }
-        Arrays.sort(genes);
+        Arrays.sort(this.genes);
     }
 
     public void fixSelectedSingleGene(int indexToReplace, int[] geneCoutner, int gene){
@@ -81,7 +80,7 @@ public class Genotype {
         DNApart1=Arrays.copyOfRange(dominatingGenes,0,geneSplitter1);
         DNApart2=Arrays.copyOfRange(recesiveGenes,geneSplitter1,geneSplitter2);
         DNApart3=Arrays.copyOfRange(dominatingGenes,geneSplitter2,genoSize);
-        return new Genotype(combineGenes(DNApart1,DNApart2,DNApart3));
+        return new Genotype(this.combineGenes(DNApart1,DNApart2,DNApart3));
     }
 
     public Genotype mixGenotype(Genotype other){
@@ -93,7 +92,7 @@ public class Genotype {
         return this.mixGenesOnGivenPivots(other, geneSplitter1, geneSplitter2);
     }
 
-    private static int[] combineGenes(int[] DNApart1, int[] DNApart2, int[] DNApart3){
+    public static int[] combineGenes(int[] DNApart1, int[] DNApart2, int[] DNApart3){
         int[] combinedGenes= new int[genoSize];
         int i=0;
         for(int gene : DNApart1)
@@ -117,5 +116,26 @@ public class Genotype {
         for(int i=0;i<Genotype.genoSize;i++)
             string.append(Integer.toString(this.genes[i]));
         return string.toString();
+    }
+
+    @Override
+    public int hashCode(){
+        int hash=13;
+        for(int i=0;i<genoSize;i++)
+            hash+=this.genes[i]*(i+7);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (!(other instanceof Genotype)) return false;
+        Genotype that = (Genotype) other;
+
+        for (int i = 0; i < genoSize; i++)
+            if (that.genes[i] != this.genes[i])
+                return false;
+
+        return true;
     }
 }

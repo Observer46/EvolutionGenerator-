@@ -1,11 +1,13 @@
 package agh.cs.project.lab8.Classes;
 
-import static agh.cs.project.lab8.Classes.OptionParser.plantEnergy;
 
 public class Plant extends AbstractWorldMapElement {
-    public static int energyBoost=plantEnergy;
-    public Plant (Vector2d position){
+    public static int energyBoost;
+    public ModuloMap map;
+    public Plant(Vector2d position, ModuloMap map){
         super.position=position;
+        this.energyBoost= OptionParser.plantEnergy;
+        this.map=map;
     }
 
     @Override
@@ -13,7 +15,12 @@ public class Plant extends AbstractWorldMapElement {
         return true;
     }
 
-    public void gotEaten(){
-        super.map.remove(this);
+    public String toString(){
+        String s;
+        if(this.map.isInJungle(super.getPosition()))
+            s= Character.toString((char) 10047)+ " ";
+        else
+            s= Character.toString((char) 10051)+ " ";
+        return s;
     }
 }

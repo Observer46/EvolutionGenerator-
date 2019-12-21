@@ -15,24 +15,65 @@ public class ModuloMap implements IPositionChangeObserver{
     private ListMultimap<Vector2d,IMapElement> elements = ArrayListMultimap.create();
     private List<EvolvingAnimal> deadAnimals = new ArrayList<>();
     private Random random = new Random();
-    private final Vector2d jungleLowerLeft;
-    private final Vector2d jungleUpperRight;
+    private static int jungleRatioWidth;
+    private static int jungleRatioHeight;
+    private static Vector2d jungleLowerLeft;
+    private static Vector2d jungleUpperRight;
     private MapStatistics mapStats;
+    private EvolvingAnimal observedAnimal=null;
 
     public ModuloMap(Vector2d upperRight){
         this.upperRight=upperRight;
+        ModuloMap.jungleRatioHeight = OptionParser.jungleRatioHeight;
+        ModuloMap.jungleRatioWidth = OptionParser.jungleRatioWidth;
         this.jungleLowerLeft = this.findJungleLowerLeft();
         this.jungleUpperRight = this.findJungleUpperRight();
-        this.mapStats = new MapStatistics(OptionParser.startAnimalNumber);
+        this.mapStats = new MapStatistics(this);
     }
 
-    public Vector2d verifyMove(Vector2d position) { // Nie testowane
+    public ListMultimap<Vector2d,IMapElement> getElements(){
+        return this.elements;
+    }
+
+    public Vector2d getLowerLeft(){
+        return this.lowerLeft;
+    }
+
+    public Vector2d getUpperRight(){
+        return this.upperRight;
+    }
+
+    public List<EvolvingAnimal> getDeadAnimals(){
+        return this.deadAnimals;
+    }
+    public List<EvolvingAnimal> getAnimals(){
+        return this.animals;
+    }
+    public List<Plant> getPlants(){
+        return this.plants;
+    }
+
+    public void setObservedAnimal(Vector2d animalPosition){
+        List <EvolvingAnimal> maxEnergyAnimalsOnPos = this.getMaxEnergyAnimalsAtPosition(animalPosition);
+        this.observedAnimal = maxEnergyAnimalsOnPos.get(0);
+        this.observedAnimal.startObserving();
+    }
+
+    public void stopObservingAnimal(){
+        this.observedAnimal=null;
+        this.observedAnimal.startObserving();
+    }
+
+    public Vector2d verifyMove(Vector2d position) {
         Vector2d verifiedPosition=position;
         if(!position.precedes(upperRight)){
-            verifiedPosition=new Vector2d(position.x%upperRight.x,position.y%upperRight.y);
+            verifiedPosition=new Vector2d(verifiedPosition.x%upperRight.x,verifiedPosition.y%upperRight.y);
         }
         if(!position.follows(lowerLeft)){
-            verifiedPosition=new Vector2d(position.x%lowerLeft.x,position.y%lowerLeft.y);
+            if(verifiedPosition.x<lowerLeft.x)
+                verifiedPosition=new Vector2d(verifiedPosition.x + upperRight.x,verifiedPosition.y);
+            if (verifiedPosition.y<lowerLeft.y)
+                verifiedPosition=new Vector2d(verifiedPosition.x,verifiedPosition.y + upperRight.y);
         }
         return verifiedPosition;
     }
@@ -41,21 +82,21 @@ public class ModuloMap implements IPositionChangeObserver{
         return new Vector2d(this.upperRight.x/2,this.upperRight.y/2);
     }
 
-    private Vector2d findJungleLowerLeft(){ // Raczej ok
+    private Vector2d findJungleLowerLeft(){
         Vector2d center = this.getCenter();
-        int jungleLowerLeftX = center.x - this.upperRight.x *(OptionParser.jungleRatioWidth/100)/2;
-        int jungleLowerLeftY = center.y - this.upperRight.y *(OptionParser.jungleRatioHeight/100)/2;
+        int jungleLowerLeftX = center.x - this.upperRight.x *ModuloMap.jungleRatioWidth/100/2;
+        int jungleLowerLeftY = center.y - this.upperRight.y *ModuloMap.jungleRatioHeight/100/2;
         return new Vector2d(jungleLowerLeftX,jungleLowerLeftY);
     }
 
-    private Vector2d findJungleUpperRight(){ // Raczej ok
+    private Vector2d findJungleUpperRight(){
         Vector2d center = this.getCenter();
-        int jungleUpperRightX = center.x + this.upperRight.x *(OptionParser.jungleRatioWidth/100)/2;
-        int jungleUpperRightY = center.y + this.upperRight.y *(OptionParser.jungleRatioHeight/100)/2;
+        int jungleUpperRightX = center.x + this.upperRight.x *ModuloMap.jungleRatioWidth/100/2;
+        int jungleUpperRightY = center.y + this.upperRight.y *ModuloMap.jungleRatioHeight/100/2;
         return new Vector2d(jungleUpperRightX,jungleUpperRightY);
     }
 
-    public Vector2d findChildPosition(EvolvingAnimal parent){ // Raczej ok
+    public Vector2d findChildPosition(EvolvingAnimal parent){
         int birthDirectionID = random.nextInt(8);
         MapDirection birthDirection = MapDirection.convertToMapDir(birthDirectionID);
 
@@ -70,12 +111,13 @@ public class ModuloMap implements IPositionChangeObserver{
         return childPosition;
     }
 
-    public void place(IMapElement element) { // Raczej ok
+    public void place(IMapElement element) {
         this.elements.put(element.getPosition(),element);
         if (element instanceof EvolvingAnimal) {
             EvolvingAnimal animal = (EvolvingAnimal) element;
             this.animals.add(animal);
             this.addAsObserver(animal);
+            this.mapStats.addAnimalToStats(animal);
         }
         else if(element instanceof Plant){
             Plant plant = (Plant) element;
@@ -84,7 +126,7 @@ public class ModuloMap implements IPositionChangeObserver{
         else throw new IllegalArgumentException("Unknown type of map element");
     }
 
-    public void remove(IMapElement element) { // Raczej ok
+    public void remove(IMapElement element) {
         this.elements.remove(element.getPosition(),element);
         if (element instanceof EvolvingAnimal){
             EvolvingAnimal animal = (EvolvingAnimal) element;
@@ -99,16 +141,15 @@ public class ModuloMap implements IPositionChangeObserver{
         else throw new IllegalArgumentException("Unknown type of map element");
     }
 
-    public List<IMapElement> objectsAt(Vector2d position) { // Raczej ok
+    public List<IMapElement> objectsAt(Vector2d position) {
         List <IMapElement> elementsOnPosition = this.elements.get(position);
         return elementsOnPosition;
     }
 
-    public boolean isOccupied(Vector2d position){ // Raczej ok
-        return objectsAt(position).size()==0;
+    public boolean isOccupied(Vector2d position){ // Działa
+        return !(objectsAt(position).size()==0);
     }
 
-    // IT'S JUNGLE OUT THERE!
 
     public void animalMovePhase() {
         for(EvolvingAnimal animal : animals) {
@@ -118,23 +159,33 @@ public class ModuloMap implements IPositionChangeObserver{
     }
 
     public void deleteDeadAnimalsPhase(){
+        List<EvolvingAnimal> animalsToDelete = new ArrayList<>();
         for(EvolvingAnimal animal : animals)
-            if(!animal.checkIfLives())  this.remove(animal);
+            if(!animal.checkIfLives())
+                animalsToDelete.add(animal);
+
+        for (EvolvingAnimal animal : animalsToDelete) {
+            int currentEra = this.mapStats.getEra();
+            animal.getAnimalStats().setDeathDate(currentEra);
+            remove(animal);
+        }
     }
 
     public void animalsEatPhase(){
+        List <Plant> eatenPlants = new ArrayList<>();
         for(Plant plant : plants){
             List<IMapElement> elementsOnPlantPosition = objectsAt(plant.getPosition());
             if(elementsOnPlantPosition.size()>1){ // Jeśli jest więcej niż jeden element na pozycji rośliny to jest tam zwierzę
                 List<EvolvingAnimal> maxEnergyAnimals = getMaxEnergyAnimalsAtPosition(plant.getPosition());
                 int splitEnergyBoost = Plant.energyBoost/maxEnergyAnimals.size();
                 feedMaxEnergyAnimals(maxEnergyAnimals,splitEnergyBoost);
-                plant.gotEaten();
+                eatenPlants.add(plant);
             }
         }
+        for(Plant plant : eatenPlants)  this.remove(plant);
     }
 
-    public List<EvolvingAnimal> getMaxEnergyAnimalsAtPosition(Vector2d position){ // Teraz powinno działać
+    public List<EvolvingAnimal> getMaxEnergyAnimalsAtPosition(Vector2d position){
         List<EvolvingAnimal> maxEnergyAnimals = new ArrayList<>();
         List<IMapElement> objectsAtPosition = this.objectsAt(position);
         int maxEnergyFound = 0;
@@ -162,9 +213,9 @@ public class ModuloMap implements IPositionChangeObserver{
         for(IMapElement elem : elementsOnPosition)
             if(!elem.isPlant()){
                 EvolvingAnimal animal = (EvolvingAnimal) elem;
-                if(animal.getEnergy() > secondMaxEnergy)
+                if(animal.getEnergy() > secondMaxEnergy && animal.getEnergy() < maxEnergy)
                     secondMaxEnergyAnimals.clear();
-                if(animal.getEnergy() >= secondMaxEnergy){
+                if(animal.getEnergy() >= secondMaxEnergy && animal.getEnergy() < maxEnergy){
                     secondMaxEnergyAnimals.add(animal);
                     secondMaxEnergy=animal.getEnergy();
                 }
@@ -172,7 +223,16 @@ public class ModuloMap implements IPositionChangeObserver{
         return secondMaxEnergyAnimals;
     }
 
-    public List<EvolvingAnimal> findAnimalsToReproduce(List<IMapElement> elementsOnPosition){   // Raczej git
+    public void eraPasses(){
+        this.deleteDeadAnimalsPhase();
+        this.animalMovePhase();
+        this.animalsEatPhase();
+        this.animalReporductionPhase();
+        this.plantsGrowthPhase();
+        this.mapStats.eraPassed();
+    }
+
+    public List<EvolvingAnimal> findAnimalsToReproduce(List<IMapElement> elementsOnPosition){
         Vector2d thisPosition = elementsOnPosition.get(0).getPosition();       // Aktualna pozycja
         List<EvolvingAnimal> animalsWithMaxEnergy = this.getMaxEnergyAnimalsAtPosition(thisPosition);
         if (animalsWithMaxEnergy.size() >=2){
@@ -205,7 +265,7 @@ public class ModuloMap implements IPositionChangeObserver{
                 secondParentIndex = random.nextInt(animalsToReproduce.size() -1) + 1;   // Nie wylosujemy nigdy parent1 dzięki przesunięciu zakresu
         }
         else{       // Losujemy dwóch najmocniejszych
-            if (animalsToReproduce.size()>=2) {
+            if (animalsToReproduce.size()>2) {
                 firstParentIndex = random.nextInt(animalsToReproduce.size());
                 secondParentIndex = random.nextInt(animalsToReproduce.size() - firstParentIndex) + firstParentIndex;   // Nie wylosujemy nigdy parent1 dzięki przesunięciu zakresu
             }
@@ -219,9 +279,13 @@ public class ModuloMap implements IPositionChangeObserver{
 
 
     public void animalReporductionPhase(){
-        Map mapOfElems = this.elements.asMap();
-        for(Object elemCollection : mapOfElems.values()){
-            List <IMapElement>  elementsOnPositions = (ArrayList<IMapElement>) elemCollection;      // Lista elementów na pozycji gdzie cokolwiek aktualnie się znaduje
+        Set<Vector2d> nonEmptyPositions = this.elements.keySet();
+        List <Vector2d> listOfNonEmptyPositions = new ArrayList<>();
+        for(Vector2d position : nonEmptyPositions)
+            listOfNonEmptyPositions.add(position);
+
+        for(Vector2d position : listOfNonEmptyPositions){
+            List <IMapElement>  elementsOnPositions = this.elements.get(position);      // Lista elementów na pozycji gdzie cokolwiek aktualnie się znaduje
             List <EvolvingAnimal> animalsToReproduction = findAnimalsToReproduce(elementsOnPositions);
             this.tryToReproduce(animalsToReproduction);
         }
@@ -230,13 +294,13 @@ public class ModuloMap implements IPositionChangeObserver{
     public void plantsGrowthPhase() {
         Vector2d plantInJunglePos = this.getUnoccupiedRandomPosInJungle();
         if (plantInJunglePos!=null){
-        Plant plantInJungle = new Plant(plantInJunglePos);
-        this.place(plantInJungle);
+            Plant plantInJungle = new Plant(plantInJunglePos, this);
+            this.place(plantInJungle);
         }
 
         Vector2d plantOnSavannahPos = this.getUnoccupiedRandomPosOnSavannah();
         if(plantOnSavannahPos!=null) {
-            Plant plantOnSavannah = new Plant(plantInJunglePos);
+            Plant plantOnSavannah = new Plant(plantOnSavannahPos, this);
             this.place(plantOnSavannah);
         }
 
@@ -281,13 +345,14 @@ public class ModuloMap implements IPositionChangeObserver{
             attemptCount--;
         }while ((this.isOccupied(randPosOnSavannah) || this.isInJungle(randPosOnSavannah)) && attemptCount>0);  // Losujemy tak długo, jak pozycja może być zajęta (potencjalnie) lub jest w dżungli
         return !this.isOccupied(randPosOnSavannah) && !this.isInJungle(randPosOnSavannah) ? randPosOnSavannah : null;
-    }
+}
 
 
-    public void placeFirstAnimals(){    // Jakie są wymagania co do początku???
+    public void placeFirstAnimals(){
         for(int i=0;i<OptionParser.startAnimalNumber;i++) {
             Vector2d animalPosition=this.getRandomPositionInRangeNoCollision(this.lowerLeft,this.upperRight);
             EvolvingAnimal animal = new EvolvingAnimal(this,animalPosition);
+            this.place(animal);
         }
     }
 
@@ -304,8 +369,23 @@ public class ModuloMap implements IPositionChangeObserver{
         animal.removeObserver(this);
     }
 
+    public boolean areAnyAliveAnimals(){
+        return this.mapStats.getAnimalCount()>0;
+    }
 
-    public String toString(){
-        return "";
+    public String writeMapStats(){
+        return this.mapStats.toString();
+    }
+
+
+    public String toString() {
+        MapVisualizer visualizer = new MapVisualizer(this);
+        return this.mapStats.toString() + "\n"+visualizer.draw(lowerLeft,upperRight);
+    }
+    public String toStringExtra() {
+        MapVisualizer visualizer = new MapVisualizer(this);
+        String s="";
+        if(this.observedAnimal!=null)   s=this.observedAnimal.getAnimalStats().printObservedStats();
+        return s+this.toString();
     }
 }

@@ -20,8 +20,8 @@ public class Vector2d {
     public String toString(){
         return "(" + this.x + "," + this.y + ")";
     }
-    public boolean precedes(Vector2d other){
-        return (this.x<=other.x && this.y<=other.y) ? true : false;
+    public boolean precedes(Vector2d other){    // Określone tak, bo pola ponumerowane są 0, 1,...,N-1 - pozwala to prościej "zawijać mapę"
+        return (this.x<other.x && this.y<other.y) ? true : false;
     }
 
     public boolean follows(Vector2d other){

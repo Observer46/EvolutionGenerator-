@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3927fb8f-5c01-4459-9531-f0401f224f8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/EvolvingAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/EvolvingAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/MapStatistics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/ModuloMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/ModuloMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/agh/cs/project/lab8/Classes/SafariVisualization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/EvolvingAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/MapStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/ModuloMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/ModuloMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/SafariVisualization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/cs/project/lab8/Classes/SafariVisualization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/statistics.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

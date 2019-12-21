@@ -136,9 +136,9 @@ public class EvolvingAnimal extends AbstractWorldMapElement {
         else
             s=Character.toString((char) 9785)+ " ";
         if(this.map.getMapStats().getAnimalsWithDominatingGenotype().contains(this))    // Te są dominujące
-            s=Character.toString((char) 9854)+ " ";
-        if(this.isSelectedForObservation){
             s=Character.toString((char) 9733)+ " ";
+        if(this.isSelectedForObservation){
+            s=Character.toString((char) 9854)+ " ";
             if(!this.checkIfLives())
                 s=Character.toString((char) 9760)+ " ";
         }
